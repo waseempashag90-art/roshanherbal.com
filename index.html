@@ -1,0 +1,2581 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <title>Roshan Herbal | Nature's Power, Trusted Wellness</title>
+  <meta name="description" content="Roshan Herbal - Premium 100% natural herbal oils and royal vitality formulations. Cash on Delivery across Pakistan. Order online or via WhatsApp: +92 336 3916555." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'xs': '375px',
+          'sm': '640px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px',
+        },
+        extend: {
+          colors: {
+            herbal: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052214',
+            },
+            gold: {
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              accent: '#d4af37'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <style id="custom-theme-styles">
+/* Roshan Herbal - Luxury Responsive Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-primary: #0a3d24;
+  --color-primary-dark: #052214;
+  --color-primary-light: #165b37;
+  --color-emerald-accent: #10b981;
+  
+  --color-gold: #d4af37;
+  --color-gold-light: #f5d77f;
+  --color-gold-dark: #aa841f;
+  --color-gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+  
+  --color-bg-dark: #06170e;
+  --color-bg-card: rgba(10, 40, 25, 0.7);
+  --color-text-light: #f3f6f4;
+  --color-text-muted: #9bb3a4;
+
+  /* Safe Area variables for iPhones / modern mobile screens */
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #05140c;
+  color: #e2e8f0;
+  overflow-x: hidden;
+  padding-bottom: calc(64px + var(--safe-bottom)); /* Reserve space for mobile bottom bar */
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  line-height: 2.1;
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #fff2b2 45%, #e1ba43 70%, #99751e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-sparkle {
+  background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold Borders */
+.border-gold {
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.border-gold-glow {
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+/* Luxury Glassmorphism */
+.glass-panel {
+  background: rgba(8, 28, 18, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.glass-nav {
+  background: rgba(5, 20, 12, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glass-card {
+  background: linear-gradient(165deg, rgba(14, 48, 30, 0.85) 0%, rgba(6, 24, 15, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (hover: hover) {
+  .glass-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.6);
+    box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+}
+
+/* Gold Button */
+.btn-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #ecd06c 50%, #b8860b 100%);
+  color: #061c10;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+.btn-gold:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) {
+  .btn-gold:hover {
+    background: linear-gradient(135deg, #eed374 0%, #fff0a8 50%, #c9930f 100%);
+    box-shadow: 0 6px 22px rgba(212, 175, 55, 0.5);
+    transform: translateY(-2px);
+  }
+}
+
+/* WhatsApp Green Button */
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  transition: all 0.25s ease;
+  touch-action: manipulation;
+}
+
+.btn-whatsapp:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) {
+  .btn-whatsapp:hover {
+    background: linear-gradient(135deg, #2fe673 0%, #18a394 100%);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+    transform: translateY(-2px);
+  }
+}
+
+/* Pulse WhatsApp Ring */
+@keyframes pulseWhatsApp {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+}
+
+.pulse-whatsapp-ring {
+  animation: pulseWhatsApp 2s infinite;
+}
+
+/* Background Herbal Glow effects */
+.bg-herbal-radial {
+  background: radial-gradient(circle at 50% 20%, rgba(20, 83, 45, 0.35) 0%, rgba(5, 20, 12, 1) 70%);
+}
+
+.bg-hero-pattern {
+  background-image: 
+    radial-gradient(circle at 15% 25%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 65%, rgba(16, 185, 129, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(11, 55, 30, 0.4) 0%, transparent 60%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #040e08;
+}
+::-webkit-scrollbar-thumb {
+  background: #195232;
+  border-radius: 5px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #257849;
+}
+
+/* Hide scrollbar for clean horizontal tabs on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile Bottom Bar Navigation */
+.mobile-bottom-bar {
+  background: rgba(5, 20, 12, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: var(--safe-bottom);
+}
+
+/* Smooth Touch Interactions */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Responsive Modal Styling */
+@media (max-width: 640px) {
+  .modal-dialog {
+    max-height: 94vh !important;
+    margin: 0.5rem !important;
+  }
+}
+
+</style>
+</head>
+<body class="bg-[#05140c] text-gray-100 antialiased selection:bg-amber-400 selection:text-black">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-emerald-950 via-[#0d3420] to-emerald-950 border-b border-amber-500/30 text-[11px] sm:text-xs py-2 px-3 sm:px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1.5 sm:gap-2">
+      <div class="flex items-center gap-1.5 sm:gap-2 text-amber-200 text-center sm:text-left">
+        <span class="inline-flex items-center justify-center w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-amber-400/20 text-amber-300 font-bold text-[9px] sm:text-[10px]">★</span>
+        <span class="font-medium tracking-wide">100% خالص اور قدرتی ہربل پروڈکٹس | Cash On Delivery (COD) All Over Pakistan</span>
+      </div>
+      <div class="flex items-center gap-3 sm:gap-4 text-gray-300 text-[10px] sm:text-xs">
+        <a href="tel:+923363916555" class="hover:text-amber-300 flex items-center gap-1 transition">
+          <i data-lucide="phone-call" class="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-400"></i>
+          <span>+92 336 3916555</span>
+        </a>
+        <span class="hidden md:inline text-gray-600">|</span>
+        <span class="hidden md:flex items-center gap-1 text-gray-300">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>New City Phase 2, Wah Cantt</span>
+        </span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN NAVIGATION -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300 shadow-xl">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-2 sm:gap-3 group">
+        <div class="relative shrink-0">
+          <img src="logo.jpg" alt="Roshan Herbal Logo" class="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-amber-400 shadow-md shadow-amber-500/20 group-hover:scale-105 transition duration-300" />
+          <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 sm:w-3.5 sm:h-3.5 bg-emerald-500 border-2 border-black rounded-full" title="Verified Pure"></span>
+        </div>
+        <div class="min-w-0">
+          <span class="block text-base xs:text-lg sm:text-2xl font-extrabold tracking-wide font-serif-luxury text-gold-gradient truncate">ROSHAN HERBAL</span>
+          <span class="block text-[8px] xs:text-[9px] sm:text-xs text-emerald-400 tracking-wider font-semibold uppercase truncate">Nature's Power, Trusted Wellness</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-semibold text-gray-200">
+        <a href="#home" class="hover:text-amber-400 transition">Home</a>
+        <a href="#products" class="hover:text-amber-400 transition">Our Products</a>
+        <a href="#ingredients" class="hover:text-amber-400 transition">Pure Ingredients</a>
+        <a href="#why-us" class="hover:text-amber-400 transition">Why Us</a>
+        <a href="#reviews" class="hover:text-amber-400 transition">Reviews</a>
+        <a href="#contact" class="hover:text-amber-400 transition">Contact & Location</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+        <!-- Direct WhatsApp Button (Desktop/Tablet) -->
+        <a href="https://wa.me/923363916555?text=Assalam%20o%20Alaikum%20Roshan%20Herbal!%20I%20want%20to%20inquire%20about%20your%20products." 
+           target="_blank" 
+           class="hidden sm:inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl text-xs font-bold btn-whatsapp shadow-lg">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Order on WhatsApp</span>
+        </a>
+
+        <!-- Cart Button -->
+        <button onclick="openCartDrawer()" class="relative p-2 sm:p-2.5 rounded-xl bg-emerald-950/80 hover:bg-emerald-900 border border-amber-400/40 text-amber-300 transition flex items-center gap-1.5 sm:gap-2 group" aria-label="Open cart">
+          <i data-lucide="shopping-bag" class="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition"></i>
+          <span class="hidden md:inline text-xs font-bold text-gray-200 cart-total-badge">Rs. 0</span>
+          <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 sm:-top-2 sm:-right-2 w-4 h-4 sm:w-5 sm:h-5 bg-amber-400 text-black rounded-full font-black text-[10px] sm:text-xs flex items-center justify-center shadow-lg">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 text-gray-300 hover:text-white rounded-lg hover:bg-emerald-900/40 transition" aria-label="Toggle navigation menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#061c11]/98 backdrop-blur-2xl border-b border-emerald-900 px-5 py-4 space-y-2.5 shadow-2xl transition-all">
+      <a href="#home" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="flex items-center justify-between py-2 text-sm font-semibold text-gray-200 hover:text-amber-400 border-b border-emerald-950">
+        <span>Home</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-emerald-600"></i>
+      </a>
+      <a href="#products" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="flex items-center justify-between py-2 text-sm font-semibold text-gray-200 hover:text-amber-400 border-b border-emerald-950">
+        <span>Our Products (تمام پروڈکٹس)</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-emerald-600"></i>
+      </a>
+      <a href="#ingredients" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="flex items-center justify-between py-2 text-sm font-semibold text-gray-200 hover:text-amber-400 border-b border-emerald-950">
+        <span>Pure Ingredients (خالص اجزاء)</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-emerald-600"></i>
+      </a>
+      <a href="#why-us" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="flex items-center justify-between py-2 text-sm font-semibold text-gray-200 hover:text-amber-400 border-b border-emerald-950">
+        <span>Why Roshan Herbal (کیوں منتخب کریں)</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-emerald-600"></i>
+      </a>
+      <a href="#reviews" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="flex items-center justify-between py-2 text-sm font-semibold text-gray-200 hover:text-amber-400 border-b border-emerald-950">
+        <span>Customer Reviews (صارفین کی رائے)</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-emerald-600"></i>
+      </a>
+      <a href="#contact" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="flex items-center justify-between py-2 text-sm font-semibold text-gray-200 hover:text-amber-400">
+        <span>Contact & Location (پتہ اور رابطہ)</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-emerald-600"></i>
+      </a>
+
+      <div class="pt-3 border-t border-emerald-900 grid grid-cols-2 gap-2">
+        <a href="tel:+923363916555" class="py-2.5 px-3 rounded-xl bg-emerald-950 text-amber-300 font-bold text-xs flex items-center justify-center gap-1.5 border border-emerald-800">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call Now
+        </a>
+        <a href="https://wa.me/923363916555?text=Assalam%20o%20Alaikum%20Roshan%20Herbal!" target="_blank" class="py-2.5 px-3 rounded-xl btn-whatsapp text-xs font-bold flex items-center justify-center gap-1.5">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative overflow-hidden pt-6 pb-12 sm:py-16 lg:py-24 bg-hero-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/90 border border-amber-400/40 text-amber-300 text-[11px] sm:text-xs font-bold tracking-wide shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            100% Pure Organic & Unani Herbal Remedies
+          </div>
+
+          <h1 class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-black font-serif-luxury leading-tight text-white">
+            خالص قدرتی حکمت اور شفاء کا مظہر <br/>
+            <span class="text-gold-gradient">Nature's Power, Trusted Wellness</span>
+          </h1>
+
+          <p class="text-sm sm:text-lg text-gray-300 font-urdu text-right sm:text-right lg:text-left leading-loose">
+            روشن ہربل پیش کرتے ہیں خالص دیسی جڑی بوٹیوں سے تیار کردہ نایاب پروڈکٹس— بالوں کے گرنے، جوڑوں و پٹھوں کے درد سے نجات اور مردانہ و جسمانی طاقت کا قدرتی حل۔ کوئی کیمیکل نہیں، کوئی سائیڈ ایفیکٹ نہیں۔
+          </p>
+
+          <p class="text-xs sm:text-base text-gray-400 leading-relaxed">
+            Crafted with cold-pressed natural oils, organic herbs, Himalayan Shilajit, and Kashmiri Saffron. Tested, verified, and delivered directly to your doorstep with Cash on Delivery anywhere in Pakistan.
+          </p>
+
+          <!-- Action CTA Group -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
+            <a href="#products" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 rounded-xl btn-gold text-center text-xs sm:text-sm font-extrabold uppercase tracking-wider flex items-center justify-center gap-2 shadow-xl">
+              <span>Explore Products</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+
+            <a href="https://wa.me/923363916555?text=Assalam%20o%20Alaikum%20Roshan%20Herbal!%20I%20want%20to%20place%20an%20order." 
+               target="_blank" 
+               class="w-full sm:w-auto px-5 sm:px-6 py-3.5 rounded-xl btn-whatsapp text-center text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-xl">
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+              <span>WhatsApp Order (+92 336 3916555)</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 pt-4 sm:pt-6 border-t border-emerald-900/60">
+            <div class="flex items-center gap-2 p-2 sm:p-2.5 rounded-xl bg-emerald-950/40 border border-emerald-900">
+              <i data-lucide="leaf" class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 shrink-0"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-gray-300">100% Organic</span>
+            </div>
+            <div class="flex items-center gap-2 p-2 sm:p-2.5 rounded-xl bg-emerald-950/40 border border-emerald-900">
+              <i data-lucide="shield-check" class="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-gray-300">Lab Verified</span>
+            </div>
+            <div class="flex items-center gap-2 p-2 sm:p-2.5 rounded-xl bg-emerald-950/40 border border-emerald-900">
+              <i data-lucide="truck" class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 shrink-0"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-gray-300">Cash on Delivery</span>
+            </div>
+            <div class="flex items-center gap-2 p-2 sm:p-2.5 rounded-xl bg-emerald-950/40 border border-emerald-900">
+              <i data-lucide="award" class="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-gray-300">Wah Cantt Hub</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Showcase Carousel/Cards -->
+        <div class="lg:col-span-5 relative mt-4 lg:mt-0">
+          <!-- Ambient Glow Background -->
+          <div class="absolute inset-0 bg-gradient-to-tr from-amber-500/20 via-emerald-600/20 to-transparent blur-3xl -z-10 rounded-full"></div>
+
+          <div class="glass-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 border-2 border-amber-400/40 relative shadow-2xl">
+            <!-- Top tag -->
+            <div class="flex items-center justify-between mb-3 sm:mb-4">
+              <span class="px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-bold bg-amber-400 text-black flex items-center gap-1">
+                <i data-lucide="sparkles" class="w-3 h-3"></i> Signature Collection
+              </span>
+              <span class="text-[11px] sm:text-xs font-bold text-emerald-400 flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Live In Stock
+              </span>
+            </div>
+
+            <!-- Showcase Images Grid (3 Products) -->
+            <div class="grid grid-cols-3 gap-2 sm:gap-3 mb-4 sm:mb-5">
+              
+              <!-- Product 1 Mini -->
+              <div onclick="openProductModal('hair-relaxation-oil')" class="cursor-pointer group text-center p-1.5 sm:p-2 rounded-xl bg-black/40 border border-emerald-800 hover:border-amber-400 transition">
+                <div class="h-20 sm:h-28 flex items-center justify-center overflow-hidden rounded-lg">
+                  <img src="product1-hair-oil.jpg" alt="Hair Oil" class="h-full object-contain group-hover:scale-110 transition duration-300" />
+                </div>
+                <p class="text-[10px] sm:text-[11px] font-bold text-gray-200 mt-1.5 truncate">Hair Oil</p>
+                <p class="text-[9px] sm:text-[10px] text-amber-400 font-semibold">Rs. 549</p>
+              </div>
+
+              <!-- Product 2 Mini -->
+              <div onclick="openProductModal('body-massage-oil')" class="cursor-pointer group text-center p-1.5 sm:p-2 rounded-xl bg-black/40 border border-emerald-800 hover:border-amber-400 transition">
+                <div class="h-20 sm:h-28 flex items-center justify-center overflow-hidden rounded-lg">
+                  <img src="product2-body-oil.jpg" alt="Body Oil" class="h-full object-contain group-hover:scale-110 transition duration-300" />
+                </div>
+                <p class="text-[10px] sm:text-[11px] font-bold text-gray-200 mt-1.5 truncate">Massage Oil</p>
+                <p class="text-[9px] sm:text-[10px] text-amber-400 font-semibold">Rs. 399</p>
+              </div>
+
+              <!-- Product 3 Mini (Transparent) -->
+              <div onclick="openProductModal('shabab-bahar')" class="cursor-pointer group text-center p-1.5 sm:p-2 rounded-xl bg-black/40 border border-emerald-800 hover:border-amber-400 transition">
+                <div class="h-20 sm:h-28 flex items-center justify-center overflow-hidden rounded-lg">
+                  <img src="product3-shabab-bahar.png" alt="Shabab Bahar" class="h-full object-contain group-hover:scale-110 transition duration-300 drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]" />
+                </div>
+                <p class="text-[10px] sm:text-[11px] font-bold text-gray-200 mt-1.5 truncate">شباب بہار</p>
+                <p class="text-[9px] sm:text-[10px] text-amber-400 font-semibold">Rs. 399</p>
+              </div>
+
+            </div>
+
+            <!-- Spotlight Card -->
+            <div class="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-emerald-950/80 border border-amber-400/30">
+              <div class="flex items-center gap-2.5 sm:gap-3">
+                <img src="logo.jpg" alt="Logo" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-amber-400 object-cover shrink-0" />
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-white">Direct Order & Hakeem Advice</h4>
+                  <p class="text-[11px] sm:text-xs text-amber-300 font-semibold">+92 336 3916555</p>
+                </div>
+              </div>
+              <p class="text-[11px] sm:text-xs text-gray-300 mt-2">
+                New City Phase 2, Wah Cantt se pure Pakistan me 2 se 3 din me ba-hifazat Cash On Delivery.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products" class="py-12 sm:py-16 lg:py-24 bg-[#04110a] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+        <span class="inline-block px-3.5 py-1 rounded-full text-[10px] sm:text-xs font-extrabold uppercase tracking-widest bg-emerald-900/60 text-amber-300 border border-amber-400/30 mb-2 sm:mb-3">
+          100% Herbal Solutions
+        </span>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold font-serif-luxury text-gold-gradient">
+          Our Signature Products
+        </h2>
+        <p class="text-sm sm:text-base text-gray-300 mt-1 sm:mt-2 font-urdu">
+          قدیم طبی نسخہ جات اور خالص جڑی بوٹیوں سے تیار کردہ مستند ہربل مصنوعات
+        </p>
+        
+        <!-- Filter Tabs (Horizontal scroll on mobile, flex on desktop) -->
+        <div class="flex items-center gap-2 mt-5 sm:mt-6 overflow-x-auto no-scrollbar pb-1 sm:pb-0 sm:flex-wrap sm:justify-center">
+          <button onclick="filterProducts('all')" data-category="all" class="filter-tab-btn shrink-0 px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold bg-amber-400 text-black shadow-lg shadow-amber-500/20">
+            All Products (3)
+          </button>
+          <button onclick="filterProducts('hair')" data-category="hair" class="filter-tab-btn shrink-0 px-3.5 sm:px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-950/70 text-gray-300 hover:text-white border border-emerald-800/60 transition">
+            Hair Care
+          </button>
+          <button onclick="filterProducts('body')" data-category="body" class="filter-tab-btn shrink-0 px-3.5 sm:px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-950/70 text-gray-300 hover:text-white border border-emerald-800/60 transition">
+            Pain Relief & Massage
+          </button>
+          <button onclick="filterProducts('vitality')" data-category="vitality" class="filter-tab-btn shrink-0 px-3.5 sm:px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-950/70 text-gray-300 hover:text-white border border-emerald-800/60 transition">
+            Royal Vitality (شباب بہار)
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Grid (1 col on mobile, 2 cols on tablet, 3 cols on desktop) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- PRODUCT 1: HAIR & RELAXATION OIL -->
+        <div data-category="hair" class="product-card glass-card rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between group">
+          <div class="p-5 sm:p-6">
+            <!-- Badge & Rating -->
+            <div class="flex items-center justify-between mb-3 sm:mb-4">
+              <span class="px-2.5 sm:px-3 py-1 rounded-full text-xs font-black bg-emerald-600 text-white shadow-md">
+                Bestseller
+              </span>
+              <div class="flex items-center gap-1 text-amber-400 text-xs font-bold">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                <span>4.9 (142 reviews)</span>
+              </div>
+            </div>
+
+            <!-- Product Image -->
+            <div class="relative h-56 sm:h-64 w-full flex items-center justify-center p-3 sm:p-4 bg-gradient-to-b from-black/20 to-black/60 rounded-2xl border border-emerald-900/60 overflow-hidden mb-4 sm:mb-6">
+              <img src="product1-hair-oil.jpg" alt="Hair & Relaxation Oil" class="h-full object-contain group-hover:scale-105 transition duration-500" />
+              <button onclick="openProductModal('hair-relaxation-oil')" class="absolute bottom-2.5 right-2.5 px-3 py-1.5 rounded-lg bg-black/80 hover:bg-amber-400 hover:text-black text-white text-xs font-bold transition flex items-center gap-1 shadow-lg">
+                <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> View Details & Label
+              </button>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <div class="mb-3 sm:mb-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg sm:text-xl font-bold font-serif-luxury text-white">Hair & Relaxation Oil</h3>
+                <span class="text-xs px-2.5 py-1 rounded-md bg-emerald-900/60 text-amber-300 font-bold border border-emerald-800">100 ML</span>
+              </div>
+              <p class="text-xs sm:text-sm font-semibold text-amber-400">Strong Hair, Calm Sleep</p>
+              <p class="text-xs text-emerald-400 font-urdu text-right mt-1">مضبوط گھنے بال اور پرسکون گہری نیند</p>
+            </div>
+
+            <!-- Key Benefits Bullets -->
+            <ul class="space-y-1.5 text-xs text-gray-300 mb-4 sm:mb-5 border-t border-b border-emerald-900/60 py-3">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+                <span>Stops hair fall & eliminates stubborn dandruff</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+                <span>Deeply relieves mental stress & promotes calm sleep</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+                <span>Enriched with Rosemary, Kalonji, Lavender & Vitamin E</span>
+              </li>
+            </ul>
+
+            <!-- Price Tag -->
+            <div class="flex items-baseline gap-2.5 sm:gap-3 mb-4 sm:mb-5">
+              <span class="text-2xl sm:text-3xl font-black text-amber-300 font-serif-luxury">Rs. 549</span>
+              <span class="text-xs sm:text-sm text-gray-500 line-through">Rs. 699</span>
+              <span class="text-[10px] sm:text-xs px-2 py-0.5 rounded bg-red-950 text-red-300 font-bold border border-red-800">SAVE 21%</span>
+            </div>
+          </div>
+
+          <!-- Bottom Action Buttons -->
+          <div class="p-5 sm:p-6 pt-0 space-y-2">
+            <button onclick="addToCart('hair-relaxation-oil')" class="w-full py-3 rounded-xl btn-gold text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2">
+              <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+              <span>Add to Cart</span>
+            </button>
+            <button onclick="orderProductDirectWhatsApp('hair-relaxation-oil')" class="w-full py-2.5 rounded-xl btn-whatsapp text-xs font-bold flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Quick WhatsApp Order</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PRODUCT 2: BODY MASSAGE OIL -->
+        <div data-category="body" class="product-card glass-card rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between group">
+          <div class="p-5 sm:p-6">
+            <!-- Badge & Rating -->
+            <div class="flex items-center justify-between mb-3 sm:mb-4">
+              <span class="px-2.5 sm:px-3 py-1 rounded-full text-xs font-black bg-amber-600 text-white shadow-md">
+                Fast Relief
+              </span>
+              <div class="flex items-center gap-1 text-amber-400 text-xs font-bold">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                <span>4.8 (118 reviews)</span>
+              </div>
+            </div>
+
+            <!-- Product Image -->
+            <div class="relative h-56 sm:h-64 w-full flex items-center justify-center p-3 sm:p-4 bg-gradient-to-b from-black/20 to-black/60 rounded-2xl border border-emerald-900/60 overflow-hidden mb-4 sm:mb-6">
+              <img src="product2-body-oil.jpg" alt="Body Massage Oil" class="h-full object-contain group-hover:scale-105 transition duration-500" />
+              <button onclick="openProductModal('body-massage-oil')" class="absolute bottom-2.5 right-2.5 px-3 py-1.5 rounded-lg bg-black/80 hover:bg-amber-400 hover:text-black text-white text-xs font-bold transition flex items-center gap-1 shadow-lg">
+                <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> View Details & Label
+              </button>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <div class="mb-3 sm:mb-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg sm:text-xl font-bold font-serif-luxury text-white">Body Massage Oil</h3>
+                <span class="text-xs px-2.5 py-1 rounded-md bg-emerald-900/60 text-amber-300 font-bold border border-emerald-800">100 ML</span>
+              </div>
+              <p class="text-xs sm:text-sm font-semibold text-amber-400">Natural Warmth, Lasting Comfort</p>
+              <p class="text-xs text-emerald-400 font-urdu text-right mt-1">قدرتی گرمائش اور جوڑوں و پٹھوں کا درد دور کرے</p>
+            </div>
+
+            <!-- Key Benefits Bullets -->
+            <ul class="space-y-1.5 text-xs text-gray-300 mb-4 sm:mb-5 border-t border-b border-emerald-900/60 py-3">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+                <span>Fast soothing relief from joint pain, backache & stiffness</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+                <span>Reduces muscle fatigue and restores body warmth</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+                <span>Infused with Til Oil, Mustard Oil, Clove, Cinnamon & Turmeric</span>
+              </li>
+            </ul>
+
+            <!-- Price Tag -->
+            <div class="flex items-baseline gap-2.5 sm:gap-3 mb-4 sm:mb-5">
+              <span class="text-2xl sm:text-3xl font-black text-amber-300 font-serif-luxury">Rs. 399</span>
+              <span class="text-xs sm:text-sm text-gray-500 line-through">Rs. 499</span>
+              <span class="text-[10px] sm:text-xs px-2 py-0.5 rounded bg-red-950 text-red-300 font-bold border border-red-800">SAVE 20%</span>
+            </div>
+          </div>
+
+          <!-- Bottom Action Buttons -->
+          <div class="p-5 sm:p-6 pt-0 space-y-2">
+            <button onclick="addToCart('body-massage-oil')" class="w-full py-3 rounded-xl btn-gold text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2">
+              <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+              <span>Add to Cart</span>
+            </button>
+            <button onclick="orderProductDirectWhatsApp('body-massage-oil')" class="w-full py-2.5 rounded-xl btn-whatsapp text-xs font-bold flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Quick WhatsApp Order</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PRODUCT 3: SHABAB BAHAR (Transparent Image) -->
+        <div data-category="vitality" class="product-card glass-card rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between group border-2 border-amber-400/50">
+          <div class="p-5 sm:p-6">
+            <!-- Badge & Rating -->
+            <div class="flex items-center justify-between mb-3 sm:mb-4">
+              <span class="px-2.5 sm:px-3 py-1 rounded-full text-xs font-black bg-gradient-to-r from-red-700 to-amber-700 text-white shadow-md flex items-center gap-1">
+                <i data-lucide="crown" class="w-3.5 h-3.5 text-amber-300"></i> Royal Edition
+              </span>
+              <div class="flex items-center gap-1 text-amber-400 text-xs font-bold">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                <span>5.0 (189 reviews)</span>
+              </div>
+            </div>
+
+            <!-- Product Image -->
+            <div class="relative h-56 sm:h-64 w-full flex items-center justify-center p-3 sm:p-4 bg-gradient-to-b from-black/20 to-black/60 rounded-2xl border border-emerald-900/60 overflow-hidden mb-4 sm:mb-6">
+              <img src="product3-shabab-bahar.png" alt="Shabab Bahar" class="h-full object-contain group-hover:scale-105 transition duration-500 drop-shadow-[0_15px_25px_rgba(0,0,0,0.85)]" />
+              <button onclick="openProductModal('shabab-bahar')" class="absolute bottom-2.5 right-2.5 px-3 py-1.5 rounded-lg bg-black/80 hover:bg-amber-400 hover:text-black text-white text-xs font-bold transition flex items-center gap-1 shadow-lg">
+                <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> Full Formula Details
+              </button>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <div class="mb-3 sm:mb-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg sm:text-xl font-bold font-serif-luxury text-white">Shabab Bahar (شباب بہار)</h3>
+                <span class="text-xs px-2.5 py-1 rounded-md bg-amber-950 text-amber-300 font-bold border border-amber-700">50 Grams</span>
+              </div>
+              <p class="text-xs sm:text-sm font-semibold text-amber-400">Royal Vitality, Natural Power & Stamina</p>
+              <p class="text-xs text-amber-300 font-urdu text-right mt-1 font-bold">طاقت، توانائی اور جوانی کا قدرتی احساس</p>
+            </div>
+
+            <!-- Key Benefits Bullets -->
+            <ul class="space-y-1.5 text-xs text-gray-300 mb-4 sm:mb-5 border-t border-b border-emerald-900/60 py-3">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+                <span>Pure Himalayan Shilajit, Kashmiri Saffron & Ashwagandha</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+                <span>Combats chronic fatigue, weakness & boosts daily endurance</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+                <span>100% Herbal Unani formulation without steroids or chemicals</span>
+              </li>
+            </ul>
+
+            <!-- Price Tag -->
+            <div class="flex items-baseline gap-2.5 sm:gap-3 mb-4 sm:mb-5">
+              <span class="text-2xl sm:text-3xl font-black text-amber-300 font-serif-luxury">Rs. 399</span>
+              <span class="text-xs sm:text-sm text-gray-500 line-through">Rs. 499</span>
+              <span class="text-[10px] sm:text-xs px-2 py-0.5 rounded bg-red-950 text-red-300 font-bold border border-red-800">SAVE 20%</span>
+            </div>
+          </div>
+
+          <!-- Bottom Action Buttons -->
+          <div class="p-5 sm:p-6 pt-0 space-y-2">
+            <button onclick="addToCart('shabab-bahar')" class="w-full py-3 rounded-xl btn-gold text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2">
+              <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+              <span>Add to Cart</span>
+            </button>
+            <button onclick="orderProductDirectWhatsApp('shabab-bahar')" class="w-full py-2.5 rounded-xl btn-whatsapp text-xs font-bold flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Quick WhatsApp Order</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Free Shipping Banner -->
+      <div class="mt-8 sm:mt-12 p-4 sm:p-6 rounded-2xl bg-gradient-to-r from-emerald-950 via-[#0e3b23] to-emerald-950 border border-amber-400/40 text-center flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
+        <div class="text-center sm:text-left">
+          <h4 class="text-base sm:text-lg font-bold text-white flex items-center justify-center sm:justify-start gap-2">
+            <i data-lucide="gift" class="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0"></i>
+            <span>Special Deal: Free Shipping on Orders Over Rs. 1,800!</span>
+          </h4>
+          <p class="text-xs text-gray-300 mt-1">Add any combination of our products to unlock zero delivery charges nationwide.</p>
+        </div>
+        <button onclick="openCartDrawer()" class="w-full sm:w-auto px-6 py-2.5 rounded-xl btn-gold text-xs font-extrabold uppercase shrink-0">
+          View My Cart
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PURE INGREDIENTS SECTION -->
+  <section id="ingredients" class="py-12 sm:py-16 lg:py-20 bg-herbal-radial relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+        <span class="px-3.5 py-1 rounded-full text-[10px] sm:text-xs font-extrabold uppercase tracking-widest bg-emerald-900/60 text-amber-300 border border-amber-400/30">
+          The Purity Standard
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold font-serif-luxury text-gold-gradient mt-2 sm:mt-3">
+          Nature's Most Potent Healing Ingredients
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2 font-urdu">
+          ہماری تمام مصنوعات میں صرف مستند، اصلی اور خالص دیسی نباتات شامل کی جاتی ہیں
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
+        
+        <div class="glass-card p-4 sm:p-5 rounded-2xl text-center border border-emerald-900/60">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold text-lg sm:text-xl mb-2 sm:mb-3">
+            🏔️
+          </div>
+          <h4 class="text-xs sm:text-sm font-bold text-white">Himalayan Shilajit</h4>
+          <p class="text-[11px] sm:text-xs font-urdu text-amber-300 mt-0.5">خالص ہمالیائی سلاجیت</p>
+          <p class="text-[10px] sm:text-[11px] text-gray-400 mt-1.5 sm:mt-2">Over 84 essential minerals for stamina and physical endurance.</p>
+        </div>
+
+        <div class="glass-card p-4 sm:p-5 rounded-2xl text-center border border-emerald-900/60">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold text-lg sm:text-xl mb-2 sm:mb-3">
+            🌸
+          </div>
+          <h4 class="text-xs sm:text-sm font-bold text-white">Kashmiri Saffron</h4>
+          <p class="text-[11px] sm:text-xs font-urdu text-amber-300 mt-0.5">کشمیری زعفران</p>
+          <p class="text-[10px] sm:text-[11px] text-gray-400 mt-1.5 sm:mt-2">The royal antioxidant spice for mood, nerve vitality, and wellness.</p>
+        </div>
+
+        <div class="glass-card p-4 sm:p-5 rounded-2xl text-center border border-emerald-900/60">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold text-lg sm:text-xl mb-2 sm:mb-3">
+            🌱
+          </div>
+          <h4 class="text-xs sm:text-sm font-bold text-white">Kalonji (Black Seed)</h4>
+          <p class="text-[11px] sm:text-xs font-urdu text-amber-300 mt-0.5">کلونجی سیاہ دانہ</p>
+          <p class="text-[10px] sm:text-[11px] text-gray-400 mt-1.5 sm:mt-2">The blessed seed rich in thymoquinone to stimulate hair roots.</p>
+        </div>
+
+        <div class="glass-card p-4 sm:p-5 rounded-2xl text-center border border-emerald-900/60">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold text-lg sm:text-xl mb-2 sm:mb-3">
+            🌿
+          </div>
+          <h4 class="text-xs sm:text-sm font-bold text-white">Rosemary & Lavender</h4>
+          <p class="text-[11px] sm:text-xs font-urdu text-amber-300 mt-0.5">روز میری اور لیوینڈر</p>
+          <p class="text-[10px] sm:text-[11px] text-gray-400 mt-1.5 sm:mt-2">Aromatherapeutic herbs clinically proven to revive dormant scalp roots.</p>
+        </div>
+
+        <div class="glass-card p-4 sm:p-5 rounded-2xl text-center border border-emerald-900/60">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold text-lg sm:text-xl mb-2 sm:mb-3">
+            🌾
+          </div>
+          <h4 class="text-xs sm:text-sm font-bold text-white">Sesame & Mustard</h4>
+          <p class="text-[11px] sm:text-xs font-urdu text-amber-300 mt-0.5">تِل اور سرسوں کا تیل</p>
+          <p class="text-[10px] sm:text-[11px] text-gray-400 mt-1.5 sm:mt-2">Cold-pressed warming base oils that penetrate deep into aching muscles.</p>
+        </div>
+
+        <div class="glass-card p-4 sm:p-5 rounded-2xl text-center border border-emerald-900/60">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold text-lg sm:text-xl mb-2 sm:mb-3">
+            🪵
+          </div>
+          <h4 class="text-xs sm:text-sm font-bold text-white">Clove & Cinnamon</h4>
+          <p class="text-[11px] sm:text-xs font-urdu text-amber-300 mt-0.5">لونگ اور دار چینی</p>
+          <p class="text-[10px] sm:text-[11px] text-gray-400 mt-1.5 sm:mt-2">Ancient analgesics that relieve chronic joint stiffness and aches.</p>
+        </div>
+
+        <div class="glass-card p-4 sm:p-5 rounded-2xl text-center border border-emerald-900/60">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold text-lg sm:text-xl mb-2 sm:mb-3">
+            🟡
+          </div>
+          <h4 class="text-xs sm:text-sm font-bold text-white">Pure Haldi & Methi</h4>
+          <p class="text-[11px] sm:text-xs font-urdu text-amber-300 mt-0.5">ہلدی اور میتھی دانہ</p>
+          <p class="text-[10px] sm:text-[11px] text-gray-400 mt-1.5 sm:mt-2">Curcumin and protein-dense herbal seeds for deep tissue comfort.</p>
+        </div>
+
+        <div class="glass-card p-4 sm:p-5 rounded-2xl text-center border border-emerald-900/60">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold text-lg sm:text-xl mb-2 sm:mb-3">
+            🍯
+          </div>
+          <h4 class="text-xs sm:text-sm font-bold text-white">Wild Sidr Honey</h4>
+          <p class="text-[11px] sm:text-xs font-urdu text-amber-300 mt-0.5">خالص بیری کا شہد</p>
+          <p class="text-[10px] sm:text-[11px] text-gray-400 mt-1.5 sm:mt-2">Unheated, raw honey acting as an instant nutrient bio-enhancer.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE ROSHAN HERBAL -->
+  <section id="why-us" class="py-12 sm:py-16 lg:py-24 bg-[#030d07] border-t border-b border-emerald-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <div class="lg:col-span-5 text-center lg:text-left">
+          <img src="logo.jpg" alt="Roshan Herbal Emblem" class="w-32 h-32 sm:w-48 sm:h-48 mx-auto lg:mx-0 rounded-full border-4 border-amber-400 shadow-2xl mb-4 sm:mb-6 shadow-amber-500/20" />
+          <h3 class="text-xl sm:text-3xl font-extrabold font-serif-luxury text-gold-gradient">
+            خلوص، معیار اور اعتماد کا سفر
+          </h3>
+          <p class="text-xs sm:text-sm text-gray-300 font-urdu mt-2 sm:mt-3 leading-relaxed">
+            روشن ہربل نیو سٹی فیز 2 واہ کینٹ سے اپنے تمام صارفین تک خالص، قدرتی اور سائنسی و روایتی حکمت کے امتزاج سے تیار کردہ مصنوعات پہنچا رہا ہے۔ ہر پروڈکٹ کو سخت چیکنگ کے بعد تیار اور سیل کیا جاتا ہے۔
+          </p>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          
+          <div class="p-4 sm:p-6 rounded-2xl bg-emerald-950/60 border border-emerald-900/80">
+            <div class="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center mb-3">
+              <i data-lucide="check-circle" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm sm:text-base font-bold text-white">0% Chemical & Steroid Free</h4>
+            <p class="text-xs text-gray-300 mt-1">No artificial parabens, harmful mineral oils, synthetic colors, or dangerous stimulants.</p>
+          </div>
+
+          <div class="p-4 sm:p-6 rounded-2xl bg-emerald-950/60 border border-emerald-900/80">
+            <div class="w-10 h-10 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center mb-3">
+              <i data-lucide="qr-code" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm sm:text-base font-bold text-white">QR Code Verified Batch</h4>
+            <p class="text-xs text-gray-300 mt-1">Every package comes with Batch RH-2026-55 verification so you get 100% genuine formulation.</p>
+          </div>
+
+          <div class="p-4 sm:p-6 rounded-2xl bg-emerald-950/60 border border-emerald-900/80">
+            <div class="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center mb-3">
+              <i data-lucide="truck" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm sm:text-base font-bold text-white">Pakistan-wide COD</h4>
+            <p class="text-xs text-gray-300 mt-1">Pay only when you receive your parcel at your doorstep. Safe, reliable courier service.</p>
+          </div>
+
+          <div class="p-4 sm:p-6 rounded-2xl bg-emerald-950/60 border border-emerald-900/80">
+            <div class="w-10 h-10 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center mb-3">
+              <i data-lucide="headphones" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm sm:text-base font-bold text-white">Dedicated Support</h4>
+            <p class="text-xs text-gray-300 mt-1">Get direct guidance on product usage from our herbal experts via WhatsApp (+92 336 3916555).</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS SECTION -->
+  <section id="reviews" class="py-12 sm:py-16 lg:py-24 bg-[#05140c] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
+        <span class="px-3.5 py-1 rounded-full text-[10px] sm:text-xs font-extrabold uppercase tracking-widest bg-emerald-900/60 text-amber-300 border border-amber-400/30">
+          Real Feedback
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold font-serif-luxury text-gold-gradient mt-2 sm:mt-3">
+          Verified Customer Experiences
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">
+          Hear what genuine users from Wah Cantt, Islamabad, Lahore and Karachi say about Roshan Herbal.
+        </p>
+      </div>
+
+      <!-- Reviews Grid (Responsive 1-4 cols) -->
+      <div id="reviewsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Write a Review Form -->
+      <div class="glass-card p-5 sm:p-8 rounded-2xl sm:rounded-3xl max-w-3xl mx-auto border border-amber-400/30">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center font-bold shrink-0">
+            <i data-lucide="edit-3" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-bold text-white">Share Your Review</h3>
+            <p class="text-xs text-gray-300">We appreciate your honest feedback on Roshan Herbal products.</p>
+          </div>
+        </div>
+
+        <form id="addReviewForm" onsubmit="handleAddReview(event)" class="space-y-3 sm:space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-300 mb-1">Your Full Name *</label>
+              <input type="text" name="reviewerName" required placeholder="e.g. Asad Ali" class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-emerald-900 focus:border-amber-400 focus:outline-none text-xs text-white" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-300 mb-1">Your City *</label>
+              <input type="text" name="reviewerCity" required placeholder="e.g. Wah Cantt / Rawalpindi" class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-emerald-900 focus:border-amber-400 focus:outline-none text-xs text-white" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-300 mb-1">Product Used *</label>
+              <select name="reviewerProduct" class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-emerald-900 focus:border-amber-400 focus:outline-none text-xs text-white">
+                <option value="Hair & Relaxation Oil">Hair & Relaxation Oil</option>
+                <option value="Body Massage Oil">Body Massage Oil</option>
+                <option value="Shabab Bahar (شباب بہار)">Shabab Bahar (شباب بہار)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-300 mb-1">Rating *</label>
+              <select name="reviewerRating" class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-emerald-900 focus:border-amber-400 focus:outline-none text-xs text-amber-300 font-bold">
+                <option value="5">★★★★★ (5 Stars - Excellent)</option>
+                <option value="4">★★★★☆ (4 Stars - Very Good)</option>
+                <option value="3">★★★☆☆ (3 Stars - Average)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-300 mb-1">Your Experience / Review Comments *</label>
+            <textarea name="reviewerComment" rows="3" required placeholder="Apna experience share karein..." class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-emerald-900 focus:border-amber-400 focus:outline-none text-xs text-white"></textarea>
+          </div>
+
+          <button type="submit" class="w-full sm:w-auto px-7 py-3 rounded-xl btn-gold text-xs font-black uppercase tracking-wider">
+            Submit Review
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & LOCATION SECTION -->
+  <section id="contact" class="py-12 sm:py-16 lg:py-24 bg-[#030d07] border-t border-emerald-900/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        
+        <!-- Store Information -->
+        <div class="lg:col-span-6 space-y-5 sm:space-y-6">
+          <div>
+            <span class="px-3.5 py-1 rounded-full text-[10px] sm:text-xs font-extrabold uppercase tracking-widest bg-emerald-900/60 text-amber-300 border border-amber-400/30">
+              Get In Touch
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold font-serif-luxury text-gold-gradient mt-2 sm:mt-3">
+              Official Contact & Store Details
+            </h2>
+            <p class="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2 font-urdu">
+              کسی بھی قسم کی معلومات، آرڈر یا طبی مشورے کے لیے ہم سے رابطہ فرمائیں
+            </p>
+          </div>
+
+          <!-- Contact cards -->
+          <div class="space-y-3 sm:space-y-4">
+            
+            <!-- Phone / WhatsApp -->
+            <a href="https://wa.me/923363916555?text=Assalam%20o%20Alaikum%20Roshan%20Herbal!" target="_blank" class="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-emerald-950/60 border border-emerald-900/80 hover:border-amber-400/60 transition group">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+                <i data-lucide="phone-call" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] sm:text-xs text-gray-400 font-medium">Call & WhatsApp Helpline</span>
+                <h4 class="text-base sm:text-lg font-black text-amber-300 tracking-wide">+92 336 3916555</h4>
+                <p class="text-[11px] sm:text-xs text-emerald-400 mt-0.5">Click to chat directly on WhatsApp (24/7 Response)</p>
+              </div>
+            </a>
+
+            <!-- Address -->
+            <div class="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-emerald-950/60 border border-emerald-900/80">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] sm:text-xs text-gray-400 font-medium">Head Office & Distribution</span>
+                <h4 class="text-sm sm:text-base font-bold text-white">New City Phase 2, Wah Cantt</h4>
+                <p class="text-[11px] sm:text-xs text-gray-300 mt-0.5">District Rawalpindi, Punjab, Pakistan</p>
+              </div>
+            </div>
+
+            <!-- Business Hours & Delivery Info -->
+            <div class="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-emerald-950/60 border border-emerald-900/80">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                <i data-lucide="clock" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] sm:text-xs text-gray-400 font-medium">Operational Hours & Dispatch</span>
+                <h4 class="text-xs sm:text-sm font-bold text-white">Monday - Saturday (9:00 AM to 9:00 PM)</h4>
+                <p class="text-[11px] sm:text-xs text-amber-300 mt-0.5">Same-day dispatch for orders received before 3:00 PM</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-2.5 sm:gap-3 pt-1">
+            <a href="tel:+923363916555" class="w-full sm:w-auto px-5 py-3 rounded-xl bg-emerald-900/80 hover:bg-emerald-800 text-white font-bold text-xs flex items-center justify-center gap-2 transition border border-emerald-700">
+              <i data-lucide="phone" class="w-4 h-4 text-amber-400"></i> Call Now (+92 336 3916555)
+            </a>
+            <a href="https://wa.me/923363916555" target="_blank" class="w-full sm:w-auto px-5 py-3 rounded-xl btn-whatsapp text-xs font-bold flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Chat
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Google Maps Embed / Visual Map -->
+        <div class="lg:col-span-6">
+          <div class="glass-card rounded-2xl sm:rounded-3xl p-4 sm:p-5 border border-amber-400/40 h-full flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3 sm:mb-4">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <h4 class="text-xs sm:text-sm font-bold text-white">Location Map & Dispatch Hub</h4>
+                </div>
+                <span class="text-[11px] sm:text-xs text-amber-300 font-semibold">New City Phase 2, Wah Cantt</span>
+              </div>
+              
+              <!-- Embedded Google Map -->
+              <div class="w-full h-64 sm:h-72 rounded-2xl overflow-hidden border border-emerald-800 relative bg-black/60 shadow-inner">
+                <iframe 
+                  title="Roshan Herbal Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13264.444265437877!2d72.77583625!3d33.7835171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa433fcaad45d%3A0x6b1070e309cb9f3a!2sNew%20City%20Phase%202%2C%20Wah%2C%20Rawalpindi%2C%20Punjab!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0; filter: contrast(1.1) opacity(0.9);" 
+                  allowfullscreen="" 
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Local Delivery Notice -->
+            <div class="mt-3 sm:mt-4 p-3 sm:p-4 rounded-xl bg-emerald-950/80 border border-emerald-900 text-[11px] sm:text-xs text-gray-300">
+              <span class="text-amber-400 font-bold">Local Pickup & Express Delivery:</span> 
+              Customers in Wah Cantt, Taxila, Hassan Abdal, and Rawalpindi can also avail same-day fast motorcycle delivery.
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-gray-400 pt-12 sm:pt-16 pb-6 sm:pb-8 border-t border-amber-500/20 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 pb-8 sm:pb-12 border-b border-emerald-950">
+        
+        <!-- Brand Info -->
+        <div class="space-y-3 sm:space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="logo.jpg" alt="Roshan Herbal" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-amber-400 object-cover" />
+            <div>
+              <span class="block text-base sm:text-lg font-serif-luxury font-extrabold text-gold-gradient">ROSHAN HERBAL</span>
+              <span class="block text-[9px] sm:text-[10px] text-emerald-400 tracking-wider">Nature's Power, Trusted Wellness</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed font-urdu">
+            روشن ہربل — خالص اور مستند یونانی ہربل مصنوعات جو آپ کی صحت، بالوں کی خوبصورتی اور جسمانی توانائی کی ضامن ہیں۔
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-2.5 sm:space-y-3">
+          <h4 class="text-xs font-black uppercase tracking-wider text-amber-300">Quick Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-amber-300 transition">Home Page</a></li>
+            <li><a href="#products" class="hover:text-amber-300 transition">All Herbal Products</a></li>
+            <li><a href="#ingredients" class="hover:text-amber-300 transition">Pure Ingredients</a></li>
+            <li><a href="#why-us" class="hover:text-amber-300 transition">Quality & Certifications</a></li>
+            <li><a href="#reviews" class="hover:text-amber-300 transition">Customer Testimonials</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="space-y-2.5 sm:space-y-3">
+          <h4 class="text-xs font-black uppercase tracking-wider text-amber-300">Our Products</h4>
+          <ul class="space-y-2">
+            <li>
+              <button onclick="openProductModal('hair-relaxation-oil')" class="hover:text-amber-300 transition text-left">
+                Hair & Relaxation Oil (Rs. 549)
+              </button>
+            </li>
+            <li>
+              <button onclick="openProductModal('body-massage-oil')" class="hover:text-amber-300 transition text-left">
+                Body Massage Oil (Rs. 399)
+              </button>
+            </li>
+            <li>
+              <button onclick="openProductModal('shabab-bahar')" class="hover:text-amber-300 transition text-left">
+                Shabab Bahar (شباب بہار - Rs. 399)
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="space-y-2.5 sm:space-y-3">
+          <h4 class="text-xs font-black uppercase tracking-wider text-amber-300">Contact Us</h4>
+          <p class="flex items-center gap-2 text-gray-300">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+            <span>+92 336 3916555</span>
+          </p>
+          <p class="flex items-center gap-2 text-gray-300">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+            <span>New City Phase 2, Wah Cantt</span>
+          </p>
+          <p class="flex items-center gap-2 text-emerald-400 font-semibold">
+            <i data-lucide="truck" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+            <span>Cash on Delivery Nationwide</span>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-gray-500 text-center sm:text-left">
+        <p>&copy; 2026 Roshan Herbal. A Project of AKK Business Forum. All Rights Reserved.</p>
+        <p class="text-amber-400/80">Batch Series: RH-2026-55 | Wah Cantt, Pakistan</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== MOBILE APP-LIKE BOTTOM NAV BAR (Visible only on <1024px screens) ==================== -->
+  <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-40 mobile-bottom-bar flex items-center justify-around px-2 py-2 border-t border-amber-500/30 shadow-2xl">
+    <!-- Home -->
+    <a href="#home" class="flex flex-col items-center justify-center text-gray-300 hover:text-amber-400 p-1.5 transition">
+      <i data-lucide="home" class="w-5 h-5"></i>
+      <span class="text-[10px] font-semibold mt-0.5">Home</span>
+    </a>
+
+    <!-- Products -->
+    <a href="#products" class="flex flex-col items-center justify-center text-gray-300 hover:text-amber-400 p-1.5 transition">
+      <i data-lucide="leaf" class="w-5 h-5"></i>
+      <span class="text-[10px] font-semibold mt-0.5">Shop</span>
+    </a>
+
+    <!-- Prominent WhatsApp Order Button in Center -->
+    <a href="https://wa.me/923363916555?text=Assalam%20o%20Alaikum%20Roshan%20Herbal!%20I%20want%20to%20order." target="_blank" class="flex flex-col items-center justify-center -mt-4 bg-[#25D366] text-white p-2.5 rounded-full shadow-lg border-2 border-black hover:scale-105 transition" title="Order via WhatsApp">
+      <i data-lucide="message-circle" class="w-6 h-6"></i>
+    </a>
+
+    <!-- Cart Button with Counter -->
+    <button onclick="openCartDrawer()" class="flex flex-col items-center justify-center text-gray-300 hover:text-amber-400 p-1.5 relative transition">
+      <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+      <span class="cart-count-badge hidden absolute top-0 right-1 w-4 h-4 bg-amber-400 text-black rounded-full font-black text-[9px] flex items-center justify-center">0</span>
+      <span class="text-[10px] font-semibold mt-0.5">Cart</span>
+    </button>
+
+    <!-- Call -->
+    <a href="tel:+923363916555" class="flex flex-col items-center justify-center text-gray-300 hover:text-amber-400 p-1.5 transition">
+      <i data-lucide="phone" class="w-5 h-5"></i>
+      <span class="text-[10px] font-semibold mt-0.5">Call</span>
+    </a>
+  </nav>
+
+  <!-- ==================== MODALS & DRAWERS ==================== -->
+
+  <!-- 1. CART SLIDE-OVER DRAWER -->
+  <div id="cartBackdrop" onclick="closeCartDrawer()" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:max-w-md bg-[#05180f] border-l border-amber-400/40 z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between shadow-2xl">
+    
+    <!-- Drawer Header -->
+    <div class="p-4 sm:p-5 border-b border-emerald-900/80 flex items-center justify-between bg-emerald-950/60">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-amber-400"></i>
+        <h3 class="text-sm sm:text-base font-bold text-white">Your Shopping Cart</h3>
+      </div>
+      <button onclick="closeCartDrawer()" class="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-emerald-900/60 transition" aria-label="Close cart">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Free Delivery Progress Bar -->
+    <div class="px-4 sm:px-5 py-3 bg-black/40 border-b border-emerald-955">
+      <div id="freeShippingText" class="text-xs text-gray-300 mb-1.5">
+        Add <strong>Rs. 1,800</strong> more to get <strong>FREE Delivery</strong>!
+      </div>
+      <div class="w-full h-2 rounded-full bg-emerald-950 overflow-hidden border border-emerald-900">
+        <div id="freeShippingProgressBar" class="h-full bg-amber-400 rounded-full transition-all duration-500" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3">
+      <div id="cartItemsList" class="space-y-3">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Empty Cart State -->
+      <div id="cartEmptyState" class="hidden text-center py-12 sm:py-16">
+        <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-full bg-emerald-950 text-amber-400 flex items-center justify-center mb-3 border border-emerald-900">
+          <i data-lucide="shopping-cart" class="w-7 h-7 sm:w-8 sm:h-8"></i>
+        </div>
+        <h4 class="text-sm font-bold text-white">Your cart is empty</h4>
+        <p class="text-xs text-gray-400 mt-1 mb-4">Discover our pure herbal oils and vitality formulations.</p>
+        <button onclick="closeCartDrawer()" class="px-5 py-2.5 rounded-xl btn-gold text-xs font-bold">
+          Start Shopping
+        </button>
+      </div>
+    </div>
+
+    <!-- Drawer Footer (Subtotal, Shipping, Checkout) -->
+    <div id="cartFooter" class="p-4 sm:p-5 border-t border-emerald-900/80 bg-emerald-950/70 space-y-3">
+      <div class="space-y-1.5 text-xs text-gray-300">
+        <div class="flex justify-between">
+          <span>Subtotal:</span>
+          <span id="cartSubtotal" class="font-bold text-white">Rs. 0</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Delivery Charges (COD):</span>
+          <span id="cartShipping" class="font-bold">Rs. 199</span>
+        </div>
+        <div class="flex justify-between text-sm sm:text-base font-black text-amber-300 pt-2 border-t border-emerald-900">
+          <span>Total Amount:</span>
+          <span id="cartGrandTotal">Rs. 0</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-2 pt-1">
+        <button onclick="openCheckoutModal()" class="w-full py-3.5 rounded-xl btn-gold text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2 shadow-xl">
+          <i data-lucide="check-circle" class="w-4 h-4"></i>
+          <span>Proceed to Checkout (COD)</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 2. PRODUCT DETAIL MODAL -->
+  <div id="productModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 opacity-0 pointer-events-none transition-opacity duration-300 overflow-y-auto">
+    
+    <div id="productModalContent" class="bg-[#05170d] border border-amber-400/50 rounded-2xl sm:rounded-3xl max-w-4xl w-full max-h-[92vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300 relative text-gray-200">
+      
+      <!-- Close Button -->
+      <button onclick="closeProductModal()" class="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-black/80 hover:bg-red-950 hover:text-red-400 text-gray-300 flex items-center justify-center transition border border-emerald-800" aria-label="Close product modal">
+        <i data-lucide="x" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+      </button>
+
+      <div class="p-4 sm:p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+          
+          <!-- Image Section with Toggle Tabs -->
+          <div class="lg:col-span-5 space-y-3 sm:space-y-4">
+            
+            <div class="h-64 sm:h-80 lg:h-96 w-full rounded-2xl bg-black/60 border border-emerald-800 p-3 sm:p-4 flex items-center justify-center overflow-hidden relative">
+              <img id="modalMainImage" src="" alt="Product Detail" class="max-h-full max-w-full object-contain transition duration-300 drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]" />
+            </div>
+
+            <!-- Toggle Buttons between Bottle and Label Detail Flyer -->
+            <div class="flex items-center justify-center gap-2">
+              <button id="modalTabBottleBtn" onclick="setModalImageTab('bottle')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-black shadow-lg">
+                Bottle View
+              </button>
+              <button id="modalTabFlyerBtn" onclick="setModalImageTab('flyer')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-950/80 text-gray-300 hover:text-white border border-emerald-800">
+                Label & Details View
+              </button>
+            </div>
+
+            <!-- Batch & Mfg Details Box -->
+            <div class="p-3 rounded-xl bg-black/40 border border-emerald-950 text-[11px] text-gray-300 space-y-1">
+              <div class="flex justify-between">
+                <span class="text-gray-400">Batch Number:</span>
+                <span id="modalBatch" class="font-bold text-amber-300">RH-2026-55</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Mfg Date:</span>
+                <span id="modalMfg" class="font-medium text-white">15 Nov 2026</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Exp Date:</span>
+                <span id="modalExp" class="font-medium text-white">14 Nov 2029</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Product Details Section -->
+          <div class="lg:col-span-7 space-y-4 sm:space-y-5">
+            
+            <div>
+              <div class="flex items-center justify-between">
+                <h3 id="modalTitle" class="text-xl sm:text-2xl font-black font-serif-luxury text-white">Product Name</h3>
+                <span id="modalVolume" class="px-2.5 py-1 rounded bg-emerald-950 text-amber-300 text-xs font-bold border border-emerald-800">100 ML</span>
+              </div>
+              <p id="modalTitleUrdu" class="text-xs sm:text-sm font-urdu text-amber-400 mt-1">اردو نام</p>
+              <p id="modalSubtitle" class="text-[11px] sm:text-xs font-semibold text-emerald-400 mt-0.5">Subtitle</p>
+            </div>
+
+            <!-- Price -->
+            <div class="flex items-baseline gap-3 p-3 rounded-xl bg-emerald-950/60 border border-emerald-900">
+              <span id="modalPrice" class="text-2xl sm:text-3xl font-black text-amber-300 font-serif-luxury">Rs. 549</span>
+              <span id="modalOriginalPrice" class="text-xs sm:text-sm text-gray-500 line-through">Rs. 699</span>
+              <span class="text-[11px] sm:text-xs text-emerald-400 font-bold ml-auto">✓ COD Available</span>
+            </div>
+
+            <!-- Description -->
+            <div>
+              <h4 class="text-xs font-bold text-amber-300 uppercase tracking-wider mb-1">Product Description</h4>
+              <p id="modalDesc" class="text-xs text-gray-300 leading-relaxed">Description goes here</p>
+              <p id="modalDescUrdu" class="text-xs text-emerald-300 font-urdu text-right mt-1 leading-loose">اردو تفصیل</p>
+            </div>
+
+            <!-- Benefits -->
+            <div>
+              <h4 class="text-xs font-bold text-amber-300 uppercase tracking-wider mb-2">Key Benefits</h4>
+              <ul id="modalBenefitsList" class="space-y-1.5">
+                <!-- Injected via JS -->
+              </ul>
+            </div>
+
+            <!-- Ingredients -->
+            <div>
+              <h4 class="text-xs font-bold text-amber-300 uppercase tracking-wider mb-2">Key Herbal Ingredients</h4>
+              <div id="modalIngredientsList" class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <!-- How to apply & caution -->
+            <div class="p-3 sm:p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-900/80 space-y-2 text-xs">
+              <div>
+                <span class="font-bold text-amber-400">How to Use:</span>
+                <p id="modalHowToApply" class="text-gray-300 mt-0.5">Application instructions</p>
+                <p id="modalHowToApplyUrdu" class="text-emerald-300 font-urdu text-right mt-0.5">استعمال کا طریقہ</p>
+              </div>
+              <div class="pt-2 border-t border-emerald-950">
+                <span class="font-bold text-red-400">Caution:</span>
+                <p id="modalCaution" class="text-gray-400 mt-0.5">For external use only.</p>
+              </div>
+            </div>
+
+            <!-- Quantity & Actions -->
+            <div class="pt-3 border-t border-emerald-900/80 space-y-3">
+              <div class="flex items-center gap-3">
+                <label class="text-xs font-bold text-gray-300">Quantity:</label>
+                <div class="flex items-center border border-emerald-800 rounded-xl bg-black/60 overflow-hidden">
+                  <button onclick="document.getElementById('modalQty').value = Math.max(1, parseInt(document.getElementById('modalQty').value)-1)" class="px-3 py-1.5 text-sm hover:bg-emerald-900 transition">&minus;</button>
+                  <input type="number" id="modalQty" value="1" min="1" max="50" class="w-12 text-center bg-transparent text-xs font-bold text-white focus:outline-none" />
+                  <button onclick="document.getElementById('modalQty').value = parseInt(document.getElementById('modalQty').value)+1" class="px-3 py-1.5 text-sm hover:bg-emerald-900 transition">&plus;</button>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+                <button onclick="addActiveProductToCart()" class="py-3 rounded-xl btn-gold text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                  <span>Add To Cart</span>
+                </button>
+                <button onclick="orderActiveProductWhatsApp()" class="py-3 rounded-xl btn-whatsapp text-xs font-bold flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>Direct WhatsApp Order</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3. CASH ON DELIVERY (COD) CHECKOUT MODAL -->
+  <div id="checkoutModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 opacity-0 pointer-events-none transition-opacity duration-300 overflow-y-auto">
+    
+    <div class="bg-[#05170d] border border-amber-400/50 rounded-2xl sm:rounded-3xl max-w-2xl w-full p-4 sm:p-8 shadow-2xl relative max-h-[92vh] overflow-y-auto">
+      
+      <button onclick="closeCheckoutModal()" class="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-400 hover:text-white p-2" aria-label="Close checkout">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-emerald-900">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold shrink-0">
+          <i data-lucide="truck" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+        </div>
+        <div>
+          <h3 class="text-lg sm:text-xl font-bold font-serif-luxury text-white">Cash On Delivery (COD) Checkout</h3>
+          <p class="text-xs text-amber-300">Pay when your parcel arrives at your address</p>
+        </div>
+      </div>
+
+      <!-- Order Summary Card -->
+      <div class="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-black/40 border border-emerald-900/80 mb-4 sm:mb-6">
+        <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-2">Order Items:</h4>
+        <div id="checkoutItemsList" class="space-y-1 mb-2.5 sm:mb-3">
+          <!-- Injected via JS -->
+        </div>
+        <div class="pt-2 border-t border-emerald-950 text-xs space-y-1">
+          <div class="flex justify-between text-gray-300">
+            <span>Subtotal:</span>
+            <span id="checkoutSubtotal" class="font-semibold text-white">Rs. 0</span>
+          </div>
+          <div class="flex justify-between text-gray-300">
+            <span>Delivery:</span>
+            <span id="checkoutShipping" class="font-semibold text-emerald-400">Rs. 0</span>
+          </div>
+          <div class="flex justify-between text-sm sm:text-base font-black text-amber-300 pt-1 border-t border-emerald-900">
+            <span>Grand Total:</span>
+            <span id="checkoutGrandTotal">Rs. 0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Checkout Form -->
+      <form id="checkoutForm" onsubmit="handleCheckoutSubmit(event)" class="space-y-3 sm:space-y-4">
+        
+        <div>
+          <label class="block text-xs font-bold text-gray-300 mb-1">Full Name *</label>
+          <input type="text" name="customerName" required placeholder="e.g. Muhammad Ali" class="w-full px-3.5 py-2.5 rounded-xl bg-black/60 border border-emerald-900 focus:border-amber-400 focus:outline-none text-xs text-white" />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-300 mb-1">Mobile / WhatsApp Number *</label>
+            <input type="tel" inputmode="tel" name="customerPhone" required placeholder="03361234567" class="w-full px-3.5 py-2.5 rounded-xl bg-black/60 border border-emerald-900 focus:border-amber-400 focus:outline-none text-xs text-white" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-300 mb-1">City *</label>
+            <input type="text" name="customerCity" required placeholder="e.g. Wah Cantt / Rawalpindi / Lahore" class="w-full px-3.5 py-2.5 rounded-xl bg-black/60 border border-emerald-900 focus:border-amber-400 focus:outline-none text-xs text-white" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-300 mb-1">Complete Delivery Address (House/Street/Area) *</label>
+          <textarea name="customerAddress" rows="2" required placeholder="House No, Street, Sector / Area" class="w-full px-3.5 py-2.5 rounded-xl bg-black/60 border border-emerald-900 focus:border-amber-400 focus:outline-none text-xs text-white"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-medium text-gray-400 mb-1">Special Delivery Notes (Optional)</label>
+          <input type="text" name="customerNotes" placeholder="e.g. Call before arrival" class="w-full px-3.5 py-2 rounded-xl bg-black/60 border border-emerald-900 text-xs text-white" />
+        </div>
+
+        <!-- Submit Buttons -->
+        <div class="pt-3 sm:pt-4 space-y-2">
+          <button type="submit" class="w-full py-3.5 rounded-xl btn-gold text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2 shadow-xl">
+            <i data-lucide="check" class="w-4 h-4"></i>
+            <span>Confirm Order (Cash On Delivery)</span>
+          </button>
+          
+          <button type="button" onclick="checkoutViaWhatsApp()" class="w-full py-3 rounded-xl btn-whatsapp text-xs font-bold flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Instant Order via WhatsApp (+92 336 3916555)</span>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- 4. ORDER SUCCESS CONFIRMATION MODAL -->
+  <div id="orderSuccessModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 opacity-0 pointer-events-none transition-opacity duration-300 overflow-y-auto">
+    <div class="bg-[#05170d] border-2 border-emerald-400/50 rounded-2xl sm:rounded-3xl max-w-lg w-full p-5 sm:p-8 text-center shadow-2xl relative">
+      
+      <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-3 sm:mb-4 border border-emerald-500/50">
+        <i data-lucide="check-circle-2" class="w-8 h-8 sm:w-10 sm:h-10 animate-bounce"></i>
+      </div>
+
+      <h3 class="text-xl sm:text-2xl font-bold font-serif-luxury text-gold-gradient">Shukriya! Order Received</h3>
+      <p class="text-xs text-gray-300 font-urdu mt-1">آپ کا آرڈر موصول ہو چکا ہے۔ ہم جلد رابطہ کر کے روانہ کریں گے۔</p>
+
+      <div class="my-4 sm:my-5 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-black/50 border border-emerald-900 text-left text-xs space-y-2">
+        <div class="flex justify-between">
+          <span class="text-gray-400">Order ID:</span>
+          <span id="successOrderId" class="font-black text-amber-300">RH-000000</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-gray-400">Customer:</span>
+          <span id="successCustomerName" class="font-bold text-white">-</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-gray-400">Phone:</span>
+          <span id="successCustomerPhone" class="font-medium text-white">-</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-gray-400">Delivery Address:</span>
+          <span id="successCustomerAddress" class="font-medium text-gray-200 text-right">-</span>
+        </div>
+        <div class="flex justify-between pt-2 border-t border-emerald-950 font-bold">
+          <span class="text-amber-400">Payable on Delivery:</span>
+          <span id="successTotal" class="text-amber-300 text-sm">Rs. 0</span>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <button onclick="sendReceiptToWhatsApp()" class="w-full py-3 rounded-xl btn-whatsapp text-xs font-bold flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Confirm on WhatsApp Now</span>
+        </button>
+        <button onclick="closeOrderSuccessModal()" class="w-full py-2.5 rounded-xl bg-emerald-950 hover:bg-emerald-900 text-gray-300 text-xs font-bold border border-emerald-800 transition">
+          Continue Browsing
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 5. FLOATING WHATSAPP CHAT POPUP & PULSING BUTTON (Positioned higher on mobile to clear bottom nav) -->
+  <div class="fixed bottom-20 lg:bottom-6 right-4 sm:right-6 z-40 flex flex-col items-end">
+    
+    <!-- WhatsApp Chat Popup Box -->
+    <div id="whatsappChatPopup" class="hidden mb-3 sm:mb-4 w-[calc(100vw-2rem)] sm:w-80 rounded-2xl bg-[#072014] border border-amber-400/40 shadow-2xl p-4 text-xs text-gray-200 backdrop-blur-xl animate-fade-in">
+      <div class="flex items-center justify-between pb-3 border-b border-emerald-900">
+        <div class="flex items-center gap-2.5">
+          <img src="logo.jpg" alt="Logo" class="w-8 h-8 rounded-full border border-amber-400 object-cover" />
+          <div>
+            <h4 class="font-bold text-white">Roshan Herbal Support</h4>
+            <span class="text-[10px] text-emerald-400 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Online Now
+            </span>
+          </div>
+        </div>
+        <button onclick="toggleWhatsAppChat()" class="text-gray-400 hover:text-white" aria-label="Close chat">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="py-3 space-y-2">
+        <p class="text-[11px] text-gray-300 bg-emerald-950/80 p-2.5 rounded-xl border border-emerald-900">
+          Assalam o Alaikum! Welcome to Roshan Herbal. How can we assist you today?
+        </p>
+
+        <div class="space-y-1.5 pt-1">
+          <button onclick="sendPresetWhatsApp('Assalam o Alaikum, I want to order Roshan Herbal Hair Oil')" class="w-full text-left p-2 rounded-lg bg-black/40 hover:bg-emerald-900/60 border border-emerald-900 text-[11px] text-amber-300 transition flex items-center justify-between">
+            <span>🌿 Order Hair & Relaxation Oil</span>
+            <i data-lucide="chevron-right" class="w-3 h-3 text-gray-400"></i>
+          </button>
+          <button onclick="sendPresetWhatsApp('Assalam o Alaikum, I want to order Roshan Herbal Body Massage Oil')" class="w-full text-left p-2 rounded-lg bg-black/40 hover:bg-emerald-900/60 border border-emerald-900 text-[11px] text-amber-300 transition flex items-center justify-between">
+            <span>🧴 Order Body Massage Oil</span>
+            <i data-lucide="chevron-right" class="w-3 h-3 text-gray-400"></i>
+          </button>
+          <button onclick="sendPresetWhatsApp('Assalam o Alaikum, I want details about Shabab Bahar (شباب بہار)')" class="w-full text-left p-2 rounded-lg bg-black/40 hover:bg-emerald-900/60 border border-emerald-900 text-[11px] text-amber-300 transition flex items-center justify-between">
+            <span>👑 Order Shabab Bahar (شباب بہار)</span>
+            <i data-lucide="chevron-right" class="w-3 h-3 text-gray-400"></i>
+          </button>
+          <button onclick="sendPresetWhatsApp('Assalam o Alaikum, I want to inquire about my delivery status.')" class="w-full text-left p-2 rounded-lg bg-black/40 hover:bg-emerald-900/60 border border-emerald-900 text-[11px] text-gray-300 transition flex items-center justify-between">
+            <span>🚚 Track Order / Delivery Status</span>
+            <i data-lucide="chevron-right" class="w-3 h-3 text-gray-400"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-2 border-t border-emerald-900">
+        <a href="https://wa.me/923363916555" target="_blank" class="w-full py-2 rounded-lg btn-whatsapp text-xs font-bold flex items-center justify-center gap-1.5">
+          <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Open Full WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- Pulsing WhatsApp Floating Button -->
+    <button onclick="toggleWhatsAppChat()" class="pulse-whatsapp-ring w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300 cursor-pointer" title="Chat on WhatsApp: +92 336 3916555" aria-label="Open WhatsApp Chat">
+      <i data-lucide="message-circle" class="w-6 h-6 sm:w-7 sm:h-7"></i>
+    </button>
+
+  </div>
+
+  <!-- TOAST NOTIFICATIONS CONTAINER -->
+  <div id="toastContainer" class="fixed bottom-20 lg:bottom-6 left-4 sm:left-6 z-50 flex flex-col gap-2 max-w-xs sm:max-w-sm pointer-events-none"></div>
+
+  <!-- Application Script -->
+  <script id="main-application-logic">
+/**
+ * Roshan Herbal - Main Application JavaScript
+ * Powered by pure vanilla JS with responsive state management
+ */
+
+// Phone and store info
+const STORE_INFO = {
+  name: 'Roshan Herbal',
+  tagline: "Nature's Power, Trusted Wellness",
+  phone: '+92 336 3916555',
+  whatsappRaw: '923363916555',
+  address: 'New City Phase 2, Wah Cantt, Pakistan',
+  shippingFee: 199,
+  freeShippingThreshold: 1800
+};
+
+// Products Catalog
+const PRODUCTS = [
+  {
+    id: 'hair-relaxation-oil',
+    name: 'Hair & Relaxation Oil',
+    nameUrdu: 'ہیئر اینڈ ریلیکسیشن آئل',
+    subtitle: 'Strong Hair, Calm Sleep',
+    subtitleUrdu: 'مضبوط، گھنے بال اور پرسکون گہری نیند',
+    price: 549,
+    originalPrice: 699,
+    volume: '100 ML',
+    rating: 4.9,
+    reviewsCount: 142,
+    category: 'hair',
+    badge: 'Bestseller',
+    badgeColor: 'bg-emerald-600',
+    image: 'product1-hair-oil.jpg',
+    detailImage: 'product1-hair-oil-detail.jpg',
+    hasDetailFlyer: true,
+    batchNo: 'RH-2026-55',
+    mfgDate: '15 Nov 2026',
+    expDate: '14 Nov 2029',
+    description: 'A premium therapeutic herbal blend specially formulated to stop hair fall, eliminate dandruff, and melt away daily tension to induce deep, restful sleep.',
+    descriptionUrdu: 'قدرتی جڑی بوٹیوں اور روغنیات کا شاہکار مرکب جو نہ صرف بالوں کو جڑوں سے مضبوط اور گھنا کرتا ہے بلکہ دماغی تناؤ اور بے خوابی کو ختم کر کے پرسکون نیند لاتا ہے۔',
+    benefits: [
+      'Makes hair stronger & healthier from root to tip',
+      'Significantly reduces hair fall & stubborn dandruff',
+      'Helps in calm & restful deep sleep naturally',
+      'Reduces mental stress, fatigue & headaches',
+      'Nourishes dry scalp and revives dormant hair follicles'
+    ],
+    benefitsUrdu: [
+      'بالوں کو گرنے سے روکے اور نئے بال اگانے میں معاون',
+      'خشکی، سکری اور خارش کا مکمل خاتمہ',
+      'دماغی تھکاوٹ دور کر کے پرسکون اور گہری نیند لائے',
+      'سر کی جلد کو قدرتی وٹامنز اور نمی فراہم کرے'
+    ],
+    ingredients: [
+      { name: 'Coconut Oil', urdu: 'ناریل کا خالص تیل', desc: 'Deep hydration & root conditioning' },
+      { name: 'Methi Dana', urdu: 'میتھی دانہ', desc: 'Rich in protein & nicotinic acid for hair strength' },
+      { name: 'Kalonji', urdu: 'کلونجی (Kalvongi)', desc: 'Antioxidant powerhouse for follicular regeneration' },
+      { name: 'Amla', urdu: 'آملہ', desc: 'Abundant in Vitamin C for dark, thick hair' },
+      { name: 'Castor Oil', urdu: 'ارنڈ کا تیل', desc: 'Promotes rapid thickness and density' },
+      { name: 'Lavender', urdu: 'خالص لیوینڈر', desc: 'Aromatherapy essence for sleep & stress relief' },
+      { name: 'Rosemary', urdu: 'روز میری', desc: 'Clinically proven herbal booster for scalp circulation' },
+      { name: 'Vitamin E', urdu: 'وٹامن ای', desc: 'Cellular protection against premature breakage' }
+    ],
+    howToApply: 'Massage gently on scalp & hair roots before bedtime or as needed. For optimal benefits, leave overnight and wash with mild herbal shampoo.',
+    howToApplyUrdu: 'رات سوتے وقت چند قطرے سر کی جلد پر ڈالیں اور انگلیوں کے پوروں سے 5 سے 10 منٹ ہلکا مساج کریں۔ صبح کسی اچھے شیمپو سے دھو لیں۔',
+    caution: 'For external use only. Keep away from children. Avoid contact with eyes.'
+  },
+  {
+    id: 'body-massage-oil',
+    name: 'Body Massage Oil',
+    nameUrdu: 'باڈی مساج آئل',
+    subtitle: 'Natural Warmth, Lasting Comfort',
+    subtitleUrdu: 'قدرتی گرمائش اور جوڑوں و پٹھوں کا دائمی آرام',
+    price: 399,
+    originalPrice: 499,
+    volume: '100 ML',
+    rating: 4.8,
+    reviewsCount: 118,
+    category: 'body',
+    badge: 'Popular',
+    badgeColor: 'bg-amber-600',
+    image: 'product2-body-oil.jpg',
+    detailImage: 'product2-body-oil-detail.jpg',
+    hasDetailFlyer: true,
+    batchNo: 'RH-2026-55',
+    mfgDate: '15 Nov 2026',
+    expDate: '14 Nov 2029',
+    description: 'An ancient Unani warming formula blended with therapeutic herbs to penetrate deep into sore joints, stiff muscles, and weary nerves.',
+    descriptionUrdu: 'قدیم دیسی و یونانی حکمت پر مبنی گرم تاثیر والا مساج آئل جو جوڑوں، پٹھوں کے درد، کمر درد اور کھچاؤ میں فوری سکون دیتا ہے۔',
+    benefits: [
+      'Relieves muscle pain, joint aches and body stiffness',
+      'Reduces physical exhaustion, stress & daily fatigue',
+      'Provides comforting natural therapeutic warmth',
+      'Keeps your whole body relaxed, refreshed & supple',
+      'Improves micro-circulation in strained limbs'
+    ],
+    benefitsUrdu: [
+      'پٹھوں، کمر اور گھٹنوں کے درد سے فوری نجات',
+      'دن بھر کی جسمانی مشقت کے بعد تھکاوٹ دور کرے',
+      'جسم میں خون کی روانی کو بحال اور چست رکھے',
+      'سردیوں کی ٹھنڈ اور اکڑن میں قدرتی گرمائش فراہم کرے'
+    ],
+    ingredients: [
+      { name: 'Til Oil (Sesame)', urdu: 'تِل کا تیل', desc: 'Deep penetrating carrier rich in zinc and calcium' },
+      { name: 'Mustard Oil', urdu: 'خالص سرسوں کا تیل', desc: 'Stimulates circulation and produces natural heat' },
+      { name: 'Loung (Clove)', urdu: 'لونگ کا تیل', desc: 'Natural analgesic that numbs pain receptors' },
+      { name: 'Dar Cheeni', urdu: 'دار چینی', desc: 'Anti-inflammatory bark that soothes deep aches' },
+      { name: 'Tez Pat (Bay Leaf)', urdu: 'تیز پات', desc: 'Eases joint stiffness and muscle knots' },
+      { name: 'Methi Dana', urdu: 'میتھی دانہ', desc: 'Alleviates rheumatic and joint inflammation' },
+      { name: 'Ajwain', urdu: 'اجوائن دیسی', desc: 'Spasm-relieving herb for cramped muscles' },
+      { name: 'Haldi (Turmeric)', urdu: 'خالص ہلدی', desc: 'Curcumin-powered swelling and stiffness reducer' }
+    ],
+    howToApply: 'Apply a small amount on the affected area and massage gently until fully absorbed. For best relief, keep area warm after massage.',
+    howToApplyUrdu: 'متاثرہ حصے پر مناسب مقدار لگا کر ہلکے ہاتھوں سے مالش کریں تاکہ تیل اندر تک جذب ہو جائے۔ مالش کے بعد ہوا سے بچیں۔',
+    caution: 'For external use only. Avoid contact with eyes. Keep out of reach of children. Store in a cool & dry place. Do a patch test before first use.'
+  },
+  {
+    id: 'shabab-bahar',
+    name: 'Shabab Bahar (شباب بہار)',
+    nameUrdu: 'شاہی معجون شباب بہار',
+    subtitle: 'Royal Vitality, Natural Power & Stamina',
+    subtitleUrdu: 'طاقت، توانائی اور جوانی کا قدرتی احساس - قدرتی جڑی بوٹیوں کا نایاب مرکب',
+    price: 399,
+    originalPrice: 499,
+    volume: '50 Grams',
+    rating: 5.0,
+    reviewsCount: 189,
+    category: 'vitality',
+    badge: 'Royal Tonic',
+    badgeColor: 'bg-red-700',
+    image: 'product3-shabab-bahar.png',
+    detailImage: 'product3-shabab-bahar.png',
+    hasDetailFlyer: false,
+    batchNo: 'RH-2026-55',
+    mfgDate: '15 Nov 2026',
+    expDate: '14 Nov 2029',
+    description: 'A regal herbal tonic prepared with rare Himalayan Shilajit, pure Zafran, Ashwagandha and medicinal herbs for unmatched stamina, vitality, and vigor.',
+    descriptionUrdu: 'شاہی یونانی حکمت کا نایاب تحفہ، خالص ہمالیائی سلاجیت، کشمیری زعفران اور قیمتی جڑی بوٹیوں کا بے مثال مرکب جو جسم میں نئی روح اور توانائی بھر دے۔',
+    benefits: [
+      '100% pure herbal formulation for peak physical stamina & vigor',
+      'Combats chronic body weakness, lethargy & nervous exhaustion',
+      'Restores youthful strength, daily energy & endurance',
+      'Enhances vital energy levels naturally without chemical stimulants',
+      'Strengthens immune system and supports general well-being'
+    ],
+    benefitsUrdu: [
+      'مردانہ طاقت، توانائی اور پٹھوں کی مضبوطی میں بے مثال اضافہ',
+      'دائمی کمزوری، سستی، کاہلی اور اعصابی تناؤ کا قدرتی حل',
+      'خالص ہمالیائی سلاجیت اور کشمیری زعفران کی قدرتی تاثیر',
+      'سائیڈ ایفیکٹ سے 100 فیصد پاک، خالص دیسی جڑی بوٹیوں کا نچوڑ'
+    ],
+    ingredients: [
+      { name: 'Pure Himalayan Shilajit', urdu: 'خالص ہمالیائی سلاجیت', desc: 'Over 84 minerals & fulvic acid for supreme stamina' },
+      { name: 'Kashmiri Zafran (Saffron)', urdu: 'کشمیری زعفران', desc: 'Mood enhancer and powerful antioxidant royal spice' },
+      { name: 'Ashwagandha (Asgandh)', urdu: 'اشوگندھا ناگوری', desc: 'Adaptogen for reducing cortisol and boosting strength' },
+      { name: 'Safed Musli', urdu: 'سفید موصلی', desc: 'Ancient herbal restorative for endurance and vitality' },
+      { name: 'Khulanjan & Akarkara', urdu: 'خولنجان اور عاقرقرحا', desc: 'Invigorates blood flow and nerve conductivity' },
+      { name: 'Maghz Badam & Pista', urdu: 'مغز بادام و پستہ', desc: 'Brain, heart, and muscular nutrition' },
+      { name: 'Sidr Honey (Pure)', urdu: 'خالص بیری کا شہد', desc: 'Natural preservative and instant bioavailability catalyst' }
+    ],
+    howToApply: 'Take half a teaspoon (approx 3-5g) once daily at bedtime with a glass of lukewarm milk.',
+    howToApplyUrdu: 'روزانہ رات کو سوتے وقت آدھا چائے کا چمچ (3 سے 5 گرام) ایک گلاس نیم گرم دودھ کے ساتھ استعمال کریں۔',
+    caution: 'Store in a cool, dry place away from direct sunlight. Not recommended for pregnant women or children under 18.'
+  }
+];
+
+// Default Customer Reviews
+const INITIAL_REVIEWS = [
+  {
+    id: 1,
+    name: 'Muhammad Usman',
+    city: 'Islamabad',
+    product: 'Hair & Relaxation Oil',
+    rating: 5,
+    date: '3 days ago',
+    comment: 'MashaAllah bohot behtareen oil hai! Mujhey office ki wajah se sir me dard rehta tha aur neend theek nahi aati thi. 3 din se use kar raha hoon, neend bilkul pur-sukoon aati hai aur hair fall bhi ruk gaya hai. Highly recommended!',
+    verified: true
+  },
+  {
+    id: 2,
+    name: 'Haji Abdul Rasheed',
+    city: 'Wah Cantt',
+    product: 'Body Massage Oil',
+    rating: 5,
+    date: '1 week ago',
+    comment: 'Wah Cantt local delivery 2 ghante me mil gayi. Mere ghutno me shadeed dard rehta tha, is oil ki halki si malish se bohot zada aaram mila hai. Herbal fragrance bhi bohot natural hai.',
+    verified: true
+  },
+  {
+    id: 3,
+    name: 'Tariq Mehmood',
+    city: 'Lahore',
+    product: 'Shabab Bahar (شباب بہار)',
+    rating: 5,
+    date: '2 weeks ago',
+    comment: 'Shabab Bahar waqai shahi cheez hai. Jism me jo din bhar thakawat aur susti rehti thi wo bilkul khatam ho gayi hai. Pure shilajit aur zafran ka zaiqa mehsoos hota hai. 10/10 quality.',
+    verified: true
+  },
+  {
+    id: 4,
+    name: 'Dr. Samina Khan',
+    city: 'Rawalpindi',
+    product: 'Hair & Relaxation Oil',
+    rating: 5,
+    date: '2 weeks ago',
+    comment: 'Ingredients list dekh kar mangwaya tha - Kalonji, Rosemary, Lavender ka perfect blend hai. Dandruff 4 din me 80% khatam ho chuka hai. Genuine product!',
+    verified: true
+  }
+];
+
+// App State
+let cart = (JSON.parse(localStorage.getItem('roshan_herbal_cart')) || []).map(item => ({
+  ...item,
+  image: item.image ? item.image.split('/').pop() : ''
+}));
+let reviews = JSON.parse(localStorage.getItem('roshan_herbal_reviews')) || INITIAL_REVIEWS;
+let activeModalProduct = null;
+let activeModalImageTab = 'bottle';
+
+// Save Cart
+function saveCart() {
+  localStorage.setItem('roshan_herbal_cart', JSON.stringify(cart));
+  updateCartBadge();
+  renderCartDrawer();
+}
+
+// Update Cart Badge count
+function updateCartBadge() {
+  const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const badgeElements = document.querySelectorAll('.cart-count-badge');
+  badgeElements.forEach(el => {
+    el.textContent = count;
+    if (count > 0) {
+      el.classList.remove('hidden');
+    } else {
+      el.classList.add('hidden');
+    }
+  });
+
+  const cartTotalAmount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  const totalEls = document.querySelectorAll('.cart-total-badge');
+  totalEls.forEach(el => {
+    el.textContent = `Rs. ${cartTotalAmount.toLocaleString()}`;
+  });
+}
+
+// Add Item to Cart
+function addToCart(productId, qty = 1, silent = false) {
+  const product = PRODUCTS.find(p => p.id === productId);
+  if (!product) return;
+
+  const existing = cart.find(item => item.id === productId);
+  if (existing) {
+    existing.quantity += qty;
+  } else {
+    cart.push({
+      id: product.id,
+      name: product.name,
+      nameUrdu: product.nameUrdu,
+      price: product.price,
+      image: product.image,
+      volume: product.volume,
+      quantity: qty
+    });
+  }
+
+  saveCart();
+
+  if (!silent) {
+    showToast(`"${product.name}" added to cart!`);
+    openCartDrawer();
+  }
+}
+
+// Change Quantity in Cart
+function changeCartQuantity(productId, delta) {
+  const item = cart.find(i => i.id === productId);
+  if (!item) return;
+
+  item.quantity += delta;
+  if (item.quantity <= 0) {
+    cart = cart.filter(i => i.id !== productId);
+  }
+  saveCart();
+}
+
+// Remove from Cart
+function removeFromCart(productId) {
+  cart = cart.filter(i => i.id !== productId);
+  saveCart();
+  showToast('Item removed from cart');
+}
+
+// Open/Close Cart Drawer
+function openCartDrawer() {
+  const drawer = document.getElementById('cartDrawer');
+  const backdrop = document.getElementById('cartBackdrop');
+  if (drawer && backdrop) {
+    backdrop.classList.remove('opacity-0', 'pointer-events-none');
+    backdrop.classList.add('opacity-100');
+    drawer.classList.remove('translate-x-full');
+  }
+}
+
+function closeCartDrawer() {
+  const drawer = document.getElementById('cartDrawer');
+  const backdrop = document.getElementById('cartBackdrop');
+  if (drawer && backdrop) {
+    backdrop.classList.add('opacity-0', 'pointer-events-none');
+    backdrop.classList.remove('opacity-100');
+    drawer.classList.add('translate-x-full');
+  }
+}
+
+// Render Cart Drawer
+function renderCartDrawer() {
+  const container = document.getElementById('cartItemsList');
+  const emptyState = document.getElementById('cartEmptyState');
+  const footer = document.getElementById('cartFooter');
+  const subtotalEl = document.getElementById('cartSubtotal');
+  const shippingEl = document.getElementById('cartShipping');
+  const grandTotalEl = document.getElementById('cartGrandTotal');
+  const freeShippingBar = document.getElementById('freeShippingProgressBar');
+  const freeShippingText = document.getElementById('freeShippingText');
+
+  if (!container) return;
+
+  if (cart.length === 0) {
+    container.innerHTML = '';
+    emptyState.classList.remove('hidden');
+    footer.classList.add('hidden');
+    return;
+  }
+
+  emptyState.classList.add('hidden');
+  footer.classList.remove('hidden');
+
+  let subtotal = 0;
+  let itemsHtml = '';
+
+  cart.forEach(item => {
+    const itemTotal = item.price * item.quantity;
+    subtotal += itemTotal;
+
+    itemsHtml += `
+      <div class="flex items-center gap-3 p-3 rounded-xl bg-emerald-950/40 border border-emerald-900/60 transition hover:border-amber-500/40">
+        <img src="${item.image ? item.image.split('/').pop() : ''}" alt="${item.name}" class="w-16 h-16 object-contain rounded-lg bg-black/40 p-1 border border-emerald-800/40" />
+        <div class="flex-1 min-w-0">
+          <h4 class="text-sm font-semibold text-white truncate">${item.name}</h4>
+          <p class="text-xs text-amber-400 font-medium">${item.volume} &bull; Rs. ${item.price.toLocaleString()}</p>
+          <div class="flex items-center gap-2 mt-2">
+            <button onclick="changeCartQuantity('${item.id}', -1)" class="w-6 h-6 rounded bg-emerald-900/80 hover:bg-emerald-800 text-white flex items-center justify-center text-xs font-bold transition">&minus;</button>
+            <span class="text-xs font-bold text-white px-2">${item.quantity}</span>
+            <button onclick="changeCartQuantity('${item.id}', 1)" class="w-6 h-6 rounded bg-emerald-900/80 hover:bg-emerald-800 text-white flex items-center justify-center text-xs font-bold transition">&plus;</button>
+          </div>
+        </div>
+        <div class="text-right flex flex-col justify-between items-end h-16">
+          <button onclick="removeFromCart('${item.id}')" class="text-gray-400 hover:text-red-400 transition text-sm p-1" title="Remove">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+          </button>
+          <span class="text-xs font-bold text-amber-300">Rs. ${itemTotal.toLocaleString()}</span>
+        </div>
+      </div>
+    `;
+  });
+
+  container.innerHTML = itemsHtml;
+
+  // Free shipping logic
+  const isFreeShipping = subtotal >= STORE_INFO.freeShippingThreshold;
+  const shippingFee = isFreeShipping ? 0 : STORE_INFO.shippingFee;
+  const grandTotal = subtotal + shippingFee;
+
+  if (subtotalEl) subtotalEl.textContent = `Rs. ${subtotal.toLocaleString()}`;
+  if (shippingEl) {
+    shippingEl.textContent = isFreeShipping ? 'FREE' : `Rs. ${shippingFee}`;
+    if (isFreeShipping) {
+      shippingEl.className = 'text-sm font-semibold text-emerald-400';
+    } else {
+      shippingEl.className = 'text-sm font-semibold text-gray-300';
+    }
+  }
+  if (grandTotalEl) grandTotalEl.textContent = `Rs. ${grandTotal.toLocaleString()}`;
+
+  // Free shipping progress bar
+  if (freeShippingBar && freeShippingText) {
+    if (isFreeShipping) {
+      freeShippingBar.style.width = '100%';
+      freeShippingBar.className = 'h-full bg-emerald-400 rounded-full transition-all duration-500';
+      freeShippingText.innerHTML = '<span class="text-emerald-400 font-semibold">🎉 Congratulations! You have unlocked FREE Delivery across Pakistan!</span>';
+    } else {
+      const remaining = STORE_INFO.freeShippingThreshold - subtotal;
+      const pct = Math.min(100, Math.round((subtotal / STORE_INFO.freeShippingThreshold) * 100));
+      freeShippingBar.style.width = `${pct}%`;
+      freeShippingBar.className = 'h-full bg-amber-400 rounded-full transition-all duration-500';
+      freeShippingText.innerHTML = `Add <strong>Rs. ${remaining.toLocaleString()}</strong> more to get <strong>FREE Delivery</strong>!`;
+    }
+  }
+}
+
+// Toast Notifications
+function showToast(message, type = 'success') {
+  const container = document.getElementById('toastContainer');
+  if (!container) return;
+
+  const toast = document.createElement('div');
+  toast.className = `flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md border border-amber-400/40 text-sm font-medium transition-all duration-300 transform translate-y-3 opacity-0 ${
+    type === 'success' ? 'bg-emerald-950/90 text-white' : 'bg-red-950/90 text-white'
+  }`;
+  
+  toast.innerHTML = `
+    <span class="w-2 h-2 rounded-full ${type === 'success' ? 'bg-amber-400 animate-ping' : 'bg-red-400'}"></span>
+    <span>${message}</span>
+  `;
+
+  container.appendChild(toast);
+  requestAnimationFrame(() => {
+    toast.classList.remove('translate-y-3', 'opacity-0');
+  });
+
+  setTimeout(() => {
+    toast.classList.add('opacity-0', 'translate-y-2');
+    setTimeout(() => toast.remove(), 300);
+  }, 3500);
+}
+
+// Open Product Detail Modal
+function openProductModal(productId) {
+  const product = PRODUCTS.find(p => p.id === productId);
+  if (!product) return;
+
+  activeModalProduct = product;
+  activeModalImageTab = 'bottle';
+
+  const modal = document.getElementById('productModal');
+  const content = document.getElementById('productModalContent');
+
+  // Populate data
+  document.getElementById('modalTitle').textContent = product.name;
+  document.getElementById('modalTitleUrdu').textContent = product.nameUrdu;
+  document.getElementById('modalSubtitle').textContent = product.subtitle;
+  document.getElementById('modalPrice').textContent = `Rs. ${product.price.toLocaleString()}`;
+  document.getElementById('modalOriginalPrice').textContent = `Rs. ${product.originalPrice.toLocaleString()}`;
+  document.getElementById('modalVolume').textContent = product.volume;
+  document.getElementById('modalBatch').textContent = product.batchNo;
+  document.getElementById('modalMfg').textContent = product.mfgDate;
+  document.getElementById('modalExp').textContent = product.expDate;
+  document.getElementById('modalQty').value = 1;
+
+  // Image tab buttons
+  const flyerBtn = document.getElementById('modalTabFlyerBtn');
+  if (flyerBtn) {
+    if (product.hasDetailFlyer) {
+      flyerBtn.classList.remove('hidden');
+    } else {
+      flyerBtn.classList.add('hidden');
+    }
+  }
+  updateModalImage();
+
+  // Populate Description
+  document.getElementById('modalDesc').textContent = product.description;
+  document.getElementById('modalDescUrdu').textContent = product.descriptionUrdu;
+
+  // Populate Benefits
+  const benefitsList = document.getElementById('modalBenefitsList');
+  benefitsList.innerHTML = product.benefits.map((b, i) => `
+    <li class="flex items-start gap-2 text-sm text-gray-200">
+      <span class="text-amber-400 mt-1 font-bold">&#10003;</span>
+      <div>
+        <p>${b}</p>
+        <p class="text-xs text-emerald-400 font-urdu mt-0.5 text-right">${product.benefitsUrdu[i] || ''}</p>
+      </div>
+    </li>
+  `).join('');
+
+  // Populate Ingredients
+  const ingredientsList = document.getElementById('modalIngredientsList');
+  ingredientsList.innerHTML = product.ingredients.map(ing => `
+    <div class="p-2.5 rounded-lg bg-emerald-950/60 border border-emerald-900/60 flex justify-between items-center">
+      <div>
+        <h5 class="text-xs font-bold text-amber-300">${ing.name}</h5>
+        <p class="text-[11px] text-gray-300">${ing.desc}</p>
+      </div>
+      <span class="text-xs font-urdu text-emerald-300 font-semibold px-2 py-0.5 rounded bg-emerald-900/40">${ing.urdu}</span>
+    </div>
+  `).join('');
+
+  // How to Apply
+  document.getElementById('modalHowToApply').textContent = product.howToApply;
+  document.getElementById('modalHowToApplyUrdu').textContent = product.howToApplyUrdu;
+  document.getElementById('modalCaution').textContent = product.caution;
+
+  // Show Modal
+  modal.classList.remove('opacity-0', 'pointer-events-none');
+  modal.classList.add('opacity-100');
+  content.classList.remove('scale-95');
+  content.classList.add('scale-100');
+}
+
+function updateModalImage() {
+  if (!activeModalProduct) return;
+  const mainImg = document.getElementById('modalMainImage');
+  const bottleBtn = document.getElementById('modalTabBottleBtn');
+  const flyerBtn = document.getElementById('modalTabFlyerBtn');
+
+  if (activeModalImageTab === 'flyer' && activeModalProduct.hasDetailFlyer) {
+    mainImg.src = activeModalProduct.detailImage;
+    if (flyerBtn) flyerBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-black shadow-lg';
+    if (bottleBtn) bottleBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-950/80 text-gray-300 hover:text-white border border-emerald-800';
+  } else {
+    mainImg.src = activeModalProduct.image;
+    if (bottleBtn) bottleBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-black shadow-lg';
+    if (flyerBtn) flyerBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-950/80 text-gray-300 hover:text-white border border-emerald-800';
+  }
+}
+
+function setModalImageTab(tab) {
+  activeModalImageTab = tab;
+  updateModalImage();
+}
+
+function closeProductModal() {
+  const modal = document.getElementById('productModal');
+  const content = document.getElementById('productModalContent');
+  if (modal && content) {
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+    content.classList.add('scale-95');
+    content.classList.remove('scale-100');
+  }
+}
+
+// Add From Modal
+function addActiveProductToCart() {
+  if (!activeModalProduct) return;
+  const qtyInput = document.getElementById('modalQty');
+  const qty = parseInt(qtyInput ? qtyInput.value : 1, 10) || 1;
+  addToCart(activeModalProduct.id, qty);
+  closeProductModal();
+}
+
+// Order Active Product Directly on WhatsApp
+function orderActiveProductWhatsApp() {
+  if (!activeModalProduct) return;
+  const qtyInput = document.getElementById('modalQty');
+  const qty = parseInt(qtyInput ? qtyInput.value : 1, 10) || 1;
+  orderProductDirectWhatsApp(activeModalProduct.id, qty);
+}
+
+// Direct WhatsApp order for single product
+function orderProductDirectWhatsApp(productId, qty = 1) {
+  const product = PRODUCTS.find(p => p.id === productId);
+  if (!product) return;
+
+  const total = product.price * qty;
+  const msg = `*Assalam o Alaikum Roshan Herbal!* 🌿
+Main aap ka ye product order karna chahta/chahti hoon:
+
+📌 *Product:* ${product.name} (${product.volume})
+📌 *Quantity:* ${qty}
+📌 *Total Price:* Rs. ${total.toLocaleString()}
+
+*Mera Delivery Address:*
+👤 Name: 
+📞 Phone: 
+📍 City: 
+🏠 Complete Address: 
+
+Baraye meherbani mera order confirm farmaiye. Shukriya!`;
+
+  const url = `https://wa.me/${STORE_INFO.whatsappRaw}?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+}
+
+// Open Checkout Modal
+function openCheckoutModal() {
+  if (cart.length === 0) {
+    showToast('Your cart is empty!', 'error');
+    return;
+  }
+  closeCartDrawer();
+  const modal = document.getElementById('checkoutModal');
+  if (modal) {
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+    renderCheckoutSummary();
+  }
+}
+
+function closeCheckoutModal() {
+  const modal = document.getElementById('checkoutModal');
+  if (modal) {
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+  }
+}
+
+function renderCheckoutSummary() {
+  const summaryEl = document.getElementById('checkoutItemsList');
+  const subtotalEl = document.getElementById('checkoutSubtotal');
+  const shippingEl = document.getElementById('checkoutShipping');
+  const grandTotalEl = document.getElementById('checkoutGrandTotal');
+
+  if (!summaryEl) return;
+
+  let subtotal = 0;
+  let html = '';
+
+  cart.forEach(item => {
+    const itemTotal = item.price * item.quantity;
+    subtotal += itemTotal;
+    html += `
+      <div class="flex justify-between items-center text-xs py-1.5 border-b border-emerald-950">
+        <span class="text-gray-300">${item.name} &times; ${item.quantity}</span>
+        <span class="font-bold text-amber-300">Rs. ${itemTotal.toLocaleString()}</span>
+      </div>
+    `;
+  });
+
+  const isFreeShipping = subtotal >= STORE_INFO.freeShippingThreshold;
+  const shippingFee = isFreeShipping ? 0 : STORE_INFO.shippingFee;
+  const grandTotal = subtotal + shippingFee;
+
+  summaryEl.innerHTML = html;
+  if (subtotalEl) subtotalEl.textContent = `Rs. ${subtotal.toLocaleString()}`;
+  if (shippingEl) shippingEl.textContent = isFreeShipping ? 'FREE' : `Rs. ${shippingFee}`;
+  if (grandTotalEl) grandTotalEl.textContent = `Rs. ${grandTotal.toLocaleString()}`;
+}
+
+// Process Checkout Form (COD)
+function handleCheckoutSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.customerName.value.trim();
+  const phone = form.customerPhone.value.trim();
+  const city = form.customerCity.value.trim();
+  const address = form.customerAddress.value.trim();
+  const notes = form.customerNotes.value.trim();
+
+  if (!name || !phone || !city || !address) {
+    showToast('Please fill all required fields!', 'error');
+    return;
+  }
+
+  let subtotal = cart.reduce((sum, i) => sum + (i.price * i.quantity), 0);
+  const isFreeShipping = subtotal >= STORE_INFO.freeShippingThreshold;
+  const shippingFee = isFreeShipping ? 0 : STORE_INFO.shippingFee;
+  const grandTotal = subtotal + shippingFee;
+  const orderId = 'RH-' + Math.floor(100000 + Math.random() * 900000);
+
+  // Store order details in window for receipt/WhatsApp
+  window.lastPlacedOrder = {
+    orderId,
+    name,
+    phone,
+    city,
+    address,
+    notes,
+    items: [...cart],
+    subtotal,
+    shippingFee,
+    grandTotal,
+    date: new Date().toLocaleString()
+  };
+
+  // Clear Cart
+  cart = [];
+  saveCart();
+  closeCheckoutModal();
+
+  // Show Order Confirmation
+  openOrderSuccessModal(window.lastPlacedOrder);
+}
+
+// WhatsApp Checkout from Checkout Form
+function checkoutViaWhatsApp() {
+  const form = document.getElementById('checkoutForm');
+  if (!form) return;
+
+  const name = form.customerName.value.trim();
+  const phone = form.customerPhone.value.trim();
+  const city = form.customerCity.value.trim();
+  const address = form.customerAddress.value.trim();
+  const notes = form.customerNotes.value.trim();
+
+  if (!name || !phone || !city || !address) {
+    showToast('Please enter your Name, Phone, City and Address first!', 'error');
+    return;
+  }
+
+  let subtotal = cart.reduce((sum, i) => sum + (i.price * i.quantity), 0);
+  const isFreeShipping = subtotal >= STORE_INFO.freeShippingThreshold;
+  const shippingFee = isFreeShipping ? 0 : STORE_INFO.shippingFee;
+  const grandTotal = subtotal + shippingFee;
+
+  let itemsText = cart.map(i => `▫️ *${i.name}* (${i.volume}) x ${i.quantity} = Rs. ${(i.price * i.quantity).toLocaleString()}`).join('\n');
+
+  const msg = `*Assalam o Alaikum Roshan Herbal!* 🌿
+Main new Cash On Delivery order place karna chahta hoon:
+
+🛒 *ORDER DETAILS:*
+${itemsText}
+
+💰 *Subtotal:* Rs. ${subtotal.toLocaleString()}
+🚚 *Delivery Charges:* ${isFreeShipping ? 'FREE' : 'Rs. ' + shippingFee}
+💵 *Grand Total (COD):* Rs. ${grandTotal.toLocaleString()}
+
+👤 *CUSTOMER DETAILS:*
+• Name: ${name}
+• Phone: ${phone}
+• City: ${city}
+• Delivery Address: ${address}
+${notes ? `• Special Instructions: ${notes}` : ''}
+
+Baraye meherbani order confirm karein aur tracking details share karein. Shukriya!`;
+
+  const url = `https://wa.me/${STORE_INFO.whatsappRaw}?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+
+  // Also clear cart and show confirmation
+  const orderId = 'RH-' + Math.floor(100000 + Math.random() * 900000);
+  window.lastPlacedOrder = {
+    orderId,
+    name,
+    phone,
+    city,
+    address,
+    notes,
+    items: [...cart],
+    subtotal,
+    shippingFee,
+    grandTotal,
+    date: new Date().toLocaleString()
+  };
+
+  cart = [];
+  saveCart();
+  closeCheckoutModal();
+  openOrderSuccessModal(window.lastPlacedOrder);
+}
+
+// Success Modal
+function openOrderSuccessModal(order) {
+  const modal = document.getElementById('orderSuccessModal');
+  if (!modal) return;
+
+  document.getElementById('successOrderId').textContent = order.orderId;
+  document.getElementById('successCustomerName').textContent = order.name;
+  document.getElementById('successCustomerPhone').textContent = order.phone;
+  document.getElementById('successCustomerAddress').textContent = `${order.address}, ${order.city}`;
+  document.getElementById('successTotal').textContent = `Rs. ${order.grandTotal.toLocaleString()}`;
+
+  modal.classList.remove('opacity-0', 'pointer-events-none');
+  modal.classList.add('opacity-100');
+}
+
+function closeOrderSuccessModal() {
+  const modal = document.getElementById('orderSuccessModal');
+  if (modal) {
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+  }
+}
+
+// Send receipt to WhatsApp from confirmation modal
+function sendReceiptToWhatsApp() {
+  if (!window.lastPlacedOrder) return;
+  const o = window.lastPlacedOrder;
+  const itemsText = o.items.map(i => `▫️ ${i.name} x ${i.quantity} = Rs. ${(i.price * i.quantity).toLocaleString()}`).join('\n');
+  const msg = `*Assalam o Alaikum Roshan Herbal!*
+Mera Order ID: *${o.orderId}* hai.
+Customer: ${o.name} (${o.phone})
+Address: ${o.address}, ${o.city}
+Items:
+${itemsText}
+Total: Rs. ${o.grandTotal.toLocaleString()} (Cash On Delivery)
+
+Kindly verify my order. Thank you!`;
+
+  window.open(`https://wa.me/${STORE_INFO.whatsappRaw}?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+// Render Customer Reviews
+function renderReviews() {
+  const container = document.getElementById('reviewsGrid');
+  if (!container) return;
+
+  container.innerHTML = reviews.map(rev => `
+    <div class="glass-card p-6 rounded-2xl flex flex-col justify-between border border-emerald-900/60 hover:border-amber-400/40">
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-1 text-amber-400">
+            ${'★'.repeat(rev.rating)}${'☆'.repeat(5 - rev.rating)}
+          </div>
+          <span class="text-xs text-gray-400">${rev.date}</span>
+        </div>
+        <p class="text-sm text-gray-200 leading-relaxed italic mb-4">"${rev.comment}"</p>
+      </div>
+      <div class="pt-3 border-t border-emerald-950 flex items-center justify-between">
+        <div>
+          <h4 class="text-sm font-bold text-white flex items-center gap-1">
+            ${rev.name}
+            ${rev.verified ? '<span class="text-emerald-400 text-xs" title="Verified Buyer">✓</span>' : ''}
+          </h4>
+          <span class="text-xs text-emerald-400/80">${rev.city}</span>
+        </div>
+        <span class="text-[11px] px-2.5 py-1 rounded-full bg-emerald-950 text-amber-300 border border-emerald-800 font-medium">
+          ${rev.product}
+        </span>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Handle Add Review
+function handleAddReview(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.reviewerName.value.trim();
+  const city = form.reviewerCity.value.trim();
+  const product = form.reviewerProduct.value;
+  const rating = parseInt(form.reviewerRating.value, 10);
+  const comment = form.reviewerComment.value.trim();
+
+  if (!name || !city || !comment) {
+    showToast('Please fill all review fields', 'error');
+    return;
+  }
+
+  const newReview = {
+    id: Date.now(),
+    name,
+    city,
+    product,
+    rating,
+    date: 'Just now',
+    comment,
+    verified: true
+  };
+
+  reviews.unshift(newReview);
+  localStorage.setItem('roshan_herbal_reviews', JSON.stringify(reviews));
+  renderReviews();
+  form.reset();
+  showToast('Thank you! Your review has been published.');
+}
+
+// WhatsApp Widget toggle
+function toggleWhatsAppChat() {
+  const popup = document.getElementById('whatsappChatPopup');
+  if (popup) {
+    popup.classList.toggle('hidden');
+  }
+}
+
+function sendPresetWhatsApp(msg) {
+  const url = `https://wa.me/${STORE_INFO.whatsappRaw}?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+}
+
+// Product Filtering
+function filterProducts(category) {
+  const cards = document.querySelectorAll('.product-card');
+  const buttons = document.querySelectorAll('.filter-tab-btn');
+
+  buttons.forEach(btn => {
+    if (btn.dataset.category === category) {
+      btn.className = 'filter-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-amber-400 text-black shadow-lg shadow-amber-500/20';
+    } else {
+      btn.className = 'filter-tab-btn px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-950/70 text-gray-300 hover:text-white border border-emerald-800/60 transition';
+    }
+  });
+
+  cards.forEach(card => {
+    if (category === 'all' || card.dataset.category === category) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+  updateCartBadge();
+  renderCartDrawer();
+  renderReviews();
+
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+
+  // Close modals with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeProductModal();
+      closeCartDrawer();
+      closeCheckoutModal();
+      closeOrderSuccessModal();
+    }
+  });
+});
+
+</script>
+
+  <!-- Crash-proof Lucide Icons Initializer -->
+  <script>
+    function safeInitIcons() {
+      if (typeof lucide !== 'undefined' && lucide && typeof lucide.createIcons === 'function') {
+        try {
+          lucide.createIcons();
+        } catch (e) {
+          console.warn('Lucide icon initialization note:', e);
+        }
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', safeInitIcons);
+    } else {
+      safeInitIcons();
+    }
+    window.addEventListener('load', safeInitIcons);
+    setInterval(safeInitIcons, 2000);
+  </script>
+</body>
+</html>
